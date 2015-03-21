@@ -1,4 +1,3 @@
-# This file is auto-generated during the composer install
 parameters:
     user_array:
       - { userId: 1, username: Nil, email: contact@nilportugues.com }
