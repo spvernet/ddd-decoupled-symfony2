@@ -1,0 +1,3 @@
+app_my_bounded_context:
+    resource: "@AppMyBoundedContextBundle/Resources/config/routing.yml"
+    prefix:   /

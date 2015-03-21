@@ -1,0 +1,16 @@
+imports:
+    - { resource: parameters.yml }
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+
+    app.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository:
+        class: App\MyBoundedContext\Infrastructure\Persistence\InMemory\User\UserRepository
+        arguments: ["%user_array%"]
+
+    app.my_bounded_context.application.model.user.view_user.view_user_use_case:
+        class: App\MyBoundedContext\Application\Model\User\ViewUser\ViewUserUseCase
+        arguments: [ @app.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository ]

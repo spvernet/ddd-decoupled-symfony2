@@ -1,0 +1,7 @@
+app_my_bounded_context_homepage:
+    path:     /
+    defaults: { _controller: AppMyBoundedContextBundle:Default:index }
+
+app_my_bounded_context_view_user:
+    path:     /user/{id}
+    defaults: { _controller: AppMyBoundedContextBundle:Default:loadUser }

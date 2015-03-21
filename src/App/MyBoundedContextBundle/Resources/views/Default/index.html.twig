@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Homepage</h1>
+
+    <ul>
+        <li><a href="{{ path('app_my_bounded_context_view_user', {id : 1}) }}">Load data for user 1</a></li>
+        <li><a href="{{ path('app_my_bounded_context_view_user', {id : 2}) }}">Load data for user 2 (will fail)</a></li>
+    </ul>
+{% endblock %}
