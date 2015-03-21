@@ -1,0 +1,7 @@
+nil_portugues_my_bounded_context_homepage:
+    path:     /
+    defaults: { _controller: NilPortuguesMyBoundedContextBundle:Default:index }
+
+nil_portugues_my_bounded_context_view_user:
+    path:     /user/{id}
+    defaults: { _controller: NilPortuguesMyBoundedContextBundle:Default:loadUser }

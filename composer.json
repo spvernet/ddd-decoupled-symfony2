@@ -6,7 +6,7 @@
         "psr-0":
         {
             "SymfonyStandard": "app/",
-            "App": "src/App/",
+            "NilPortugues": "src/NilPortugues/",
             "": "src/"
         }
     },

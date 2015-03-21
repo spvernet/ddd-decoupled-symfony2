@@ -1,0 +1,11 @@
+imports:
+    - { resource: parameters.yml }
+
+services:
+    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository:
+        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\User\UserRepository
+        arguments: ["%user_array%"]
+
+    nil_portugues.my_bounded_context.application.model.user.view_user.view_user_use_case:
+        class: NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserUseCase
+        arguments: [ @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository ]
