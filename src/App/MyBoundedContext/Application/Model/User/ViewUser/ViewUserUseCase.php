@@ -21,6 +21,8 @@ use InvalidArgumentException;
  */
 class ViewUserUseCase
 {
+    private $userRepository;
+    
     /**
      * @param UserRepositoryInterface $userRepository
      */
