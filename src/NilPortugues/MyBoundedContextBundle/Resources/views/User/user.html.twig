@@ -5,9 +5,10 @@
     {% if user is defined %}
     <h1>User profile</h1>
     <ul>
-        <li><strong>id:</strong> {{user.userId}}</li>
-        <li><strong>username:</strong> {{user.username}}</li>
-        <li><strong>email:</strong> {{user.email}}</li>
+        <li><strong>User Id:</strong> {{user.userId}}</li>
+        <li><strong>Username:</strong> {{user.username}}</li>
+        <li><strong>Email:</strong> {{user.email}}</li>
+        <li><strong>Registered on:</strong> {{user.registeredOn}}</li>
     </ul>
     {% else %}
         <h1>Error!</h1>

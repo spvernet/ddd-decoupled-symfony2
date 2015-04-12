@@ -20,8 +20,10 @@ interface UserFactoryInterface
      * @param $userId
      * @param $username
      * @param $email
+     * @param $registeredOn
+     *
      *
      * @return \NilPortugues\MyBoundedContext\Entity\Model\User\User
      */
-    public static function create($userId, $username, $email);
+    public static function create($userId, $username, $email, $registeredOn);
 }

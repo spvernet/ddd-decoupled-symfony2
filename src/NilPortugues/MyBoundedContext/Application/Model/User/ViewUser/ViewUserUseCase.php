@@ -45,7 +45,8 @@ class ViewUserUseCase
             return new ViewUserResponse(
                 $user->getUserId()->get(),
                 $user->getUsername()->get(),
-                $user->getEmail()->get()
+                $user->getEmail()->get(),
+                $user->getRegisteredOn()->format('Y-m-d H:i:s')
             );
         } catch (UserNotFoundException $e) {
             throw new InvalidArgumentException($e->getMessage());

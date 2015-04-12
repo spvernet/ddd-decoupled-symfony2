@@ -10,6 +10,8 @@
 
 namespace NilPortugues\MyBoundedContext\Entity\Model\User;
 
+use DateTime;
+
 /**
  * Class User
  * @package NilPortugues\MyBoundedContext\Entity\Model\User
@@ -32,15 +34,30 @@ class User
     private $email;
 
     /**
+     * @var \DateTime
+     */
+    private $registeredOn;
+
+    /**
      * @param UserId   $userId
      * @param UserName $username
      * @param Email    $email
+     * @param DateTime $registeredOn
      */
-    public function __construct(UserId $userId, UserName $username, Email $email)
+    public function __construct(UserId $userId, UserName $username, Email $email, DateTime $registeredOn = null)
     {
-        $this->userId   = $userId;
-        $this->username = $username;
-        $this->email    = $email;
+        $this->userId       = $userId;
+        $this->username     = $username;
+        $this->email        = $email;
+        $this->registeredOn = (null === $registeredOn) ? new DateTime() : $registeredOn;;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getRegisteredOn()
+    {
+        return $this->registeredOn;
     }
 
     /**

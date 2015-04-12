@@ -28,17 +28,23 @@ class ViewUserResponse
      * @var string
      */
     private $email;
+    /**
+     * @var string
+     */
+    private $registeredOn;
 
     /**
-     * @param string $userId
-     * @param string $username
-     * @param string $email
+     * @param $userId
+     * @param $username
+     * @param $email
+     * @param $registeredOn
      */
-    public function __construct($userId, $username, $email)
+    public function __construct($userId, $username, $email, $registeredOn)
     {
         $this->userId = (string) $userId;
         $this->username = (string) $username;
         $this->email = (string) $email;
+        $this->registeredOn = (string) $registeredOn;
     }
 
     /**
@@ -63,5 +69,13 @@ class ViewUserResponse
     public function getUsername()
     {
         return $this->username;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRegisteredOn()
+    {
+        return $this->registeredOn;
     }
 }

@@ -34,7 +34,7 @@ class UserRepository implements UserRepositoryInterface
     {
         foreach ($users as $user) {
             $userId = $user['userId'];
-            $this->db[$userId] = UserFactory::create($userId, $user['username'], $user['email']);
+            $this->db[$userId] = UserFactory::create($userId, $user['username'], $user['email'], $user['registeredOn']);
         }
     }
 

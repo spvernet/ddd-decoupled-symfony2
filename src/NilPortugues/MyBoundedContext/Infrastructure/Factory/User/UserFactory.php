@@ -9,6 +9,7 @@
  */
 namespace NilPortugues\MyBoundedContext\Infrastructure\Factory\User;
 
+use DateTime;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Email;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Factory\UserFactoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\User\User;
@@ -24,15 +25,17 @@ class UserFactory implements UserFactoryInterface
      * @param $userId
      * @param $username
      * @param $email
+     * @param $registeredOn
      *
      * @return User
      */
-    public static function create($userId, $username, $email)
+    public static function create($userId, $username, $email, $registeredOn)
     {
         return new User(
             new UserId($userId),
             new UserName($username),
-            new Email($email)
+            new Email($email),
+            (null === $registeredOn) ? new DateTime() : new DateTime($registeredOn)
         );
     }
 }
