@@ -63,6 +63,6 @@ class UserNameValidator
      */
     public function getErrors()
     {
-        return $this->errors['username'];
+        return $this->errors;
     }
 }

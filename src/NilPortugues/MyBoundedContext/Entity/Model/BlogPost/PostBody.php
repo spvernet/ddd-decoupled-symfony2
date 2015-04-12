@@ -2,35 +2,35 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 4/12/15
- * Time: 11:51 AM
+ * Time: 1:02 PM
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Entity\Model\User;
+namespace NilPortugues\MyBoundedContext\Entity\Model\BlogPost;
 
 use InvalidArgumentException;
-use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
+use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator\PostBodyValidator;
 
 /**
- * Class UserName
- * @package NilPortugues\MyBoundedContext\Entity\Model\User
+ * Class PostBody
+ * @package NilPortugues\MyBoundedContext\Entity\Model\BlogPost
  */
-class UserName
+class PostBody
 {
     /**
      * @var string
      */
-    private $username;
+    private $postBody;
 
     /**
-     * @param $username
+     * @param $postBody
      */
-    public function __construct($username)
+    public function __construct($postBody)
     {
-        $this->validate($username);
-        $this->username = (string)$username;
+        $this->validate($postBody);
+        $this->postBody = (string)$postBody;
     }
 
     /**
@@ -38,7 +38,7 @@ class UserName
      */
     public function __toString()
     {
-        return (string)$this->username;
+        return (string)$this->postBody;
     }
 
     /**
@@ -46,11 +46,11 @@ class UserName
      */
     public function get()
     {
-        return $this->username;
+        return $this->postBody;
     }
 
     /**
-     * @param UserName $object
+     * @param PostBody $object
      *
      * @return bool
      */
@@ -61,15 +61,15 @@ class UserName
 
 
     /**
-     * @param $username
+     * @param $postBody
      *
      * @throws \InvalidArgumentException
      */
-    private function validate($username)
+    private function validate($postBody)
     {
-        $validator = new UserNameValidator();
+        $validator = new PostBodyValidator();
 
-        if (false === $validator->isValid($username)) {
+        if (false === $validator->isValid($postBody)) {
             throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
         }
     }

@@ -10,7 +10,6 @@
 
 namespace NilPortugues\MyBoundedContext\Entity\Model\User\Factory;
 
-
 /**
  * Class UserFactoryInterface
  * @package NilPortugues\MyBoundedContext\Entity\Model\User\Factory
@@ -25,4 +24,4 @@ interface UserFactoryInterface
      * @return \NilPortugues\MyBoundedContext\Entity\Model\User\User
      */
     public static function create($userId, $username, $email);
-} 
+}

@@ -69,7 +69,7 @@ class Email
         $validator = new EmailValidator();
 
         if (false === $validator->isValid($email)) {
-            throw new InvalidArgumentException(implode(' ', $validator->getErrors()));
+            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
         }
     }
 }

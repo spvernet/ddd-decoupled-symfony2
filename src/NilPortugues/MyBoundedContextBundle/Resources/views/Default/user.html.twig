@@ -1,15 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>User profile</h1>
+
     {% if user is defined %}
+    <h1>User profile</h1>
     <ul>
-        <li>id: {{user.userId}}</li>
-        <li>username: {{user.username}}</li>
-        <li>email: {{user.email}}</li>
+        <li><strong>id:</strong> {{user.userId}}</li>
+        <li><strong>username:</strong> {{user.username}}</li>
+        <li><strong>email:</strong> {{user.email}}</li>
     </ul>
     {% else %}
-        <h2>{{ error_msg }}</h2>
+        <h1>Error!</h1>
+        <h3>{{ error_msg }}</h3>
     {% endif %}
     <br><br>
     <a href="{{ path('nil_portugues_my_bounded_context_homepage') }}">Back to homepage</a>

@@ -39,7 +39,6 @@ class DefaultController extends Controller
             $response = $viewUser->execute($request);
 
             $render = ['user' => $response];
-
         } catch (\InvalidArgumentException $e) {
             $render = ['error_msg' => $e->getMessage()];
         }

@@ -3,16 +3,45 @@
 {% block body %}
     <h1>Homepage</h1>
 
+    <h2>Blog users:</h2>
+    <p> - Demonstration of a User Aggregate</p>
     <ul>
+        <li>Load a user with an invalid Id. <i>(Validation in command bus chain)</i></li>
         <li>
             <a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : '1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d'}) }}">
-                Load data for user 1
-            </a>
+                Load existing user with a valid Id.</a> <i>Data from repository.</i>
         </li>
         <li>
             <a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : '00000000-0000-0000-0000-000000000000'}) }}">
-                Load data for user 2 (will fail)
-            </a>
+                Load a non-existent user with a valid Id (will fail).</a> <i>Exception from repository.</i>
         </li>
+    </ul>
+
+    <hr>
+
+    <h2>Blog Posts:</h2>
+    <p> - Demonstration of a Post Aggregate</p>
+    <ul>
+    </ul>
+
+    <hr>
+
+    <h2>Blog Categories:</h2>
+    <p> - Demonstration of a Category Aggregate</p>
+    <ul>
+    </ul>
+
+    <hr>
+
+    <h2>Blog Posts With Categories:</h2>
+    <p> - Demonstration of an Aggregate Root containing Post (root) and Categories</p>
+    <ul>
+    </ul>
+
+    <hr>
+
+    <h2>User Blog Posts With Categories:</h2>
+    <p> - Demonstration of an Aggregate Root containing User (root), Posts and Categories</p>
+    <ul>
     </ul>
 {% endblock %}

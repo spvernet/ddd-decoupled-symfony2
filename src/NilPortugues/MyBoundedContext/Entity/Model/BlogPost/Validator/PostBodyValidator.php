@@ -2,21 +2,21 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 4/12/15
- * Time: 12:09 PM
+ * Time: 1:39 PM
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Entity\Model\User\Validator;
+namespace NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator;
 
 use NilPortugues\Validator\Validator;
 
 /**
- * Class UserIdValidator
- * @package NilPortugues\MyBoundedContext\Entity\Model\User\Validator
+ * Class PostBodyValidator
+ * @package NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator
  */
-class UserIdValidator
+class PostBodyValidator
 {
     /**
      * @var \NilPortugues\Validator\Validator
@@ -37,14 +37,17 @@ class UserIdValidator
     }
 
     /**
-     * @param $userId
+     * @param $postId
      *
      * @return bool
      */
-    public function isValid($userId)
+    public function isValid($postId)
     {
-        $stringValidator = $this->validator->isString('userId')->isUUID(true);
-        $isValid         = $stringValidator->validate($userId);
+        $stringValidator = $this->validator->isString('postBody')
+            ->isNotNull()
+            ->hasGraphicalCharsOnly();
+
+        $isValid = $stringValidator->validate($postId);
 
         if (false === $isValid) {
             $this->errors = $stringValidator->getErrors();

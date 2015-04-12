@@ -2,23 +2,23 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 4/12/15
- * Time: 11:51 AM
+ * Time: 1:00 PM
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Entity\Model\User;
+namespace NilPortugues\MyBoundedContext\Entity\Model\BlogPost;
 
 use InvalidArgumentException;
-use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserIdValidator;
+use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator\PostIdValidator;
 use NilPortugues\Uuid\Uuid;
 
 /**
- * Class UserId
- * @package NilPortugues\MyBoundedContext\Entity\Model\User
+ * Class PostId
+ * @package NilPortugues\MyBoundedContext\Entity\Model\Post
  */
-class UserId
+class PostId
 {
     /**
      * @param string $id
@@ -41,7 +41,7 @@ class UserId
     }
 
     /**
-     * @param UserId $object
+     * @param PostId $object
      *
      * @return bool
      */
@@ -65,7 +65,7 @@ class UserId
      */
     private function validate($id)
     {
-        $validator = new UserIdValidator();
+        $validator = new PostIdValidator();
 
         if (false === $validator->isValid($id)) {
             throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));

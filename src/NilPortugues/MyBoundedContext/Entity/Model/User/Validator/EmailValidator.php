@@ -58,6 +58,6 @@ class EmailValidator
      */
     public function getErrors()
     {
-        return $this->errors['email'];
+        return $this->errors;
     }
 }

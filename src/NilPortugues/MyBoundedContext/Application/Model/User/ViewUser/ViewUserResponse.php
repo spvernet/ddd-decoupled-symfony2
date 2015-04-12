@@ -16,19 +16,33 @@ namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
  */
 class ViewUserResponse
 {
+    /**
+     * @var string
+     */
     private $userId;
+    /**
+     * @var string
+     */
     private $username;
+    /**
+     * @var string
+     */
     private $email;
 
+    /**
+     * @param string $userId
+     * @param string $username
+     * @param string $email
+     */
     public function __construct($userId, $username, $email)
     {
-        $this->userId = $userId;
-        $this->username = $username;
-        $this->email = $email;
+        $this->userId = (string) $userId;
+        $this->username = (string) $username;
+        $this->email = (string) $email;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getEmail()
     {
@@ -36,7 +50,7 @@ class ViewUserResponse
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getUserId()
     {
@@ -44,7 +58,7 @@ class ViewUserResponse
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getUsername()
     {
