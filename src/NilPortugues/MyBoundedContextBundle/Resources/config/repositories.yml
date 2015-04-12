@@ -1,0 +1,10 @@
+services:
+    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository:
+        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\User\UserRepository
+        arguments:
+          - "%user_array%"
+
+    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog_post.post_repository:
+        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\BlogPost\PostRepository
+        arguments:
+          - "%post_array%"

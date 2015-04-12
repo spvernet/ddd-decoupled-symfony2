@@ -49,7 +49,8 @@ class User
         $this->userId       = $userId;
         $this->username     = $username;
         $this->email        = $email;
-        $this->registeredOn = (null === $registeredOn) ? new DateTime() : $registeredOn;;
+        $this->registeredOn = (null === $registeredOn) ? new DateTime() : $registeredOn;
+        ;
     }
 
     /**

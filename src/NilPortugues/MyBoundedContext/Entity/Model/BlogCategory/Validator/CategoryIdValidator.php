@@ -2,21 +2,21 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 4/12/15
- * Time: 1:40 PM
+ * Time: 8:06 PM
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator;
+namespace NilPortugues\MyBoundedContext\Entity\Model\BlogCategory\Validator;
 
 use NilPortugues\Validator\Validator;
 
 /**
- * Class PostIdValidator
- * @package NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Validator
+ * Class CategoryIdValidator
+ * @package NilPortugues\MyBoundedContext\Entity\Model\BlogCategory\Validator
  */
-class PostIdValidator
+class CategoryIdValidator
 {
     /**
      * @var \NilPortugues\Validator\Validator
@@ -37,17 +37,17 @@ class PostIdValidator
     }
 
     /**
-     * @param $postId
+     * @param $categoryId
      *
      * @return bool
      */
-    public function isValid($postId)
+    public function isValid($categoryId)
     {
         $stringValidator = $this->validator
-            ->isString('postId')
+            ->isString('categoryId')
             ->isUUID(true);
 
-        $isValid = $stringValidator->validate($postId);
+        $isValid = $stringValidator->validate($categoryId);
 
         if (false === $isValid) {
             $this->errors = $stringValidator->getErrors();

@@ -10,7 +10,7 @@
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
-use NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostRequest;
+use NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class BlogPostController extends Controller
 {
-    const VIEW_POST = 'nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_use_case';
+    const VALIDATION_BUS = 'validation_bus';
     const TWIG_VIEW_POST = 'NilPortuguesMyBoundedContextBundle:BlogPost:post.html.twig';
 
     /**
@@ -30,16 +30,14 @@ class BlogPostController extends Controller
      */
     public function viewPostAction(Request $request)
     {
-        try {
-            $viewPost = $this->get(self::VIEW_POST);
+        $commandBus = $this->get(self::VALIDATION_BUS);
 
-            return $this->render(
-                self::TWIG_VIEW_POST,
-                ['post' =>  $viewPost->execute(new ViewPostRequest($request->get('id')))]
-            );
-        } catch (\InvalidArgumentException $e) {
+        try {
+            $response = $commandBus->handle(new ViewPostCommand($request->get('id')));
+            return $this->render(self::TWIG_VIEW_POST, ['post' =>  $response]);
+        } catch (\Exception $e) {
             return $this
-                ->render(self::TWIG_VIEW_POST, ['error_msg' => $e->getMessage()])
+                ->render(self::TWIG_VIEW_POST, ['error_msg' => $commandBus->getErrors()])
                 ->setStatusCode(404);
         }
     }

@@ -16,10 +16,10 @@ use InvalidArgumentException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 
 /**
- * Class ViewUserUseCase
+ * Class ViewUserCommandHandler
  * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
  */
-class ViewUserUseCase
+class ViewUserCommandHandler
 {
     private $userRepository;
     
@@ -32,12 +32,12 @@ class ViewUserUseCase
     }
 
     /**
-     * @param ViewUserRequest $request
+     * @param ViewUserCommand $request
      *
      * @return ViewUserResponse
      * @throws \InvalidArgumentException
      */
-    public function execute(ViewUserRequest $request)
+    public function handle(ViewUserCommand $request)
     {
         try {
             $user = $this->userRepository->find(new UserId($request->getUserId()));

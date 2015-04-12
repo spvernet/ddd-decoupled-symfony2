@@ -11,11 +11,14 @@
 namespace NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost;
 
 /**
- * Class ViewPostRequest
+ * Class ViewPostCommand
  * @package NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost
  */
-class ViewPostRequest
+class ViewPostCommand
 {
+    /**
+     * @var string
+     */
     private $postId;
 
     /**
@@ -23,11 +26,11 @@ class ViewPostRequest
      */
     public function __construct($postId)
     {
-        $this->postId = $postId;
+        $this->postId = (string) $postId;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getPostId()
     {

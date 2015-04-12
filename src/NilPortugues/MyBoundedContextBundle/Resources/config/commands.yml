@@ -1,0 +1,22 @@
+services:
+################################################################################################################
+# USER
+################################################################################################################
+    nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler:
+        class: NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserCommandHandler
+        arguments:
+         - @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository
+
+    nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator:
+        class: NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserCommandValidator
+
+################################################################################################################
+# POST
+################################################################################################################
+    nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler:
+        class: NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostCommandHandler
+        arguments:
+         - @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog_post.post_repository
+
+    nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_validator:
+        class: NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostCommandValidator

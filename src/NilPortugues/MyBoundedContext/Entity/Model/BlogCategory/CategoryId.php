@@ -10,10 +10,66 @@
 
 namespace NilPortugues\MyBoundedContext\Entity\Model\BlogCategory;
 
+use InvalidArgumentException;
+use NilPortugues\MyBoundedContext\Entity\Model\BlogCategory\Validator\CategoryIdValidator;
+use NilPortugues\Uuid\Uuid;
+
 /**
  * Class CategoryId
  * @package NilPortugues\MyBoundedContext\Entity\Model\BlogCategory
  */
 class CategoryId
 {
+    /**
+     * @param string $id
+     */
+    public function __construct($id = null)
+    {
+        if (null !== $id) {
+            $this->validate($id);
+        }
+
+        $this->id = (null === $id) ? Uuid::create() : $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->id;
+    }
+
+    /**
+     * @param CategoryId $object
+     *
+     * @return bool
+     */
+    public function equals($object)
+    {
+        return $object->get() === $this->get();
+    }
+
+    /**
+     * @return string
+     */
+    public function get()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param $id
+     *
+     * @throws \InvalidArgumentException
+     */
+    private function validate($id)
+    {
+        $validator = new CategoryIdValidator();
+
+        if (false === $validator->isValid($id)) {
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
+        }
+    }
 }

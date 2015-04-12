@@ -1,3 +1,5 @@
 imports:
     - { resource: fixtures/user_array.yml }
     - { resource: fixtures/post_array.yml }
+    - { resource: commanding/command_map.yml }
+    - { resource: commanding/command_validation_map.yml }

@@ -11,11 +11,14 @@
 namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
 
 /**
- * Class ViewUserRequest
+ * Class ViewUserCommand
  * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
  */
-class ViewUserRequest
+class ViewUserCommand
 {
+    /**
+     * @var string
+     */
     private $userId;
 
     /**
@@ -23,11 +26,11 @@ class ViewUserRequest
      */
     public function __construct($userId)
     {
-        $this->userId = $userId;
+        $this->userId = (string) $userId;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getUserId()
     {

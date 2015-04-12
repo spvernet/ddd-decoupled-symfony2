@@ -17,10 +17,10 @@ use InvalidArgumentException;
 use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\PostId;
 
 /**
- * Class ViewPostUseCase
+ * Class ViewPostCommandHandler
  * @package NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost
  */
-class ViewPostUseCase
+class ViewPostCommandHandler
 {
     private $postRepository;
     
@@ -33,12 +33,12 @@ class ViewPostUseCase
     }
 
     /**
-     * @param ViewPostRequest $request
+     * @param ViewPostCommand $request
      *
      * @return ViewPostResponse
      * @throws \InvalidArgumentException
      */
-    public function execute(ViewPostRequest $request)
+    public function handle(ViewPostCommand $request)
     {
         try {
             /** @var Post $post  */

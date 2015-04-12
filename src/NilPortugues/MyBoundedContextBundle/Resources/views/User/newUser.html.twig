@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Register User</h1>
+    <form method="POST" action="{{ path('nil_portugues_my_bounded_context_register_user') }}">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        <label for="name">Email:</label> <input type="text" placeholder="E-mail address" name="email"> <input type="submit" value="Register">
+    </form>
+    <br><br>
+    <a href="{{ path('nil_portugues_my_bounded_context_homepage') }}">Back to homepage</a>
+
+{% endblock %}
