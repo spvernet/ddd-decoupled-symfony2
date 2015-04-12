@@ -10,14 +10,15 @@
 namespace NilPortugues\MyBoundedContext\Infrastructure\Factory\User;
 
 use NilPortugues\MyBoundedContext\Entity\Model\User\Email;
+use NilPortugues\MyBoundedContext\Entity\Model\User\Factory\UserFactoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\User\User;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserName;
 
 /**
- * Class UserFactory
+ * Class UserFactoryInterface
  */
-class UserFactory
+class UserFactory implements UserFactoryInterface
 {
     /**
      * @param $userId
