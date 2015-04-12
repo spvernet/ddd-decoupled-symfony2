@@ -6,6 +6,7 @@ If the project happens to be useful I won't mind writing more and more pieces of
 
 ## ChangeLog
  - **2015-03-21 18:16** - Creation of the git repo for a friend [tweet](https://twitter.com/marcossegov/status/579269914420244480).
+ - **2015-04-12 12:44** - Added Value Objects to the Domain Model.
 
 
 ## Author
