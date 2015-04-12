@@ -43,9 +43,9 @@ class ViewUserUseCase
             $user = $this->userRepository->find(new UserId($request->getUserId()));
 
             return new ViewUserResponse(
-                $user->getUserId(),
-                $user->getUsername(),
-                $user->getEmail()
+                $user->getUserId()->get(),
+                $user->getUsername()->get(),
+                $user->getEmail()->get()
             );
         } catch (UserNotFoundException $e) {
             throw new InvalidArgumentException($e->getMessage());
