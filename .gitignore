@@ -9,5 +9,6 @@
 /composer.phar
 /vendor/
 /web/bundles/
-.idea/workspace.xml
+.idea
+.idea/*
 .php_cs.cache
