@@ -11,7 +11,7 @@
 namespace NilPortugues\MyBoundedContext\Entity\Model\User\Repository;
 
 use NilPortugues\MyBoundedContext\Entity\Model\User\User;
-
+use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 
 /**
  * Class UserRepositoryInterface
@@ -20,10 +20,10 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\User;
 interface UserRepositoryInterface
 {
     /**
-     * @param $userId
+     * @param UserId $userId
      *
      * @return User
      * @throws UserNotFoundException
      */
-    public function find($userId);
-} 
+    public function find(UserId $userId);
+}

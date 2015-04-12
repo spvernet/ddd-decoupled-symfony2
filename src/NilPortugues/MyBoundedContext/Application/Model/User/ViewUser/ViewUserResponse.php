@@ -10,7 +10,6 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
 
-
 /**
  * Class ViewUserResponse
  * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
@@ -51,4 +50,4 @@ class ViewUserResponse
     {
         return $this->username;
     }
-} 
+}

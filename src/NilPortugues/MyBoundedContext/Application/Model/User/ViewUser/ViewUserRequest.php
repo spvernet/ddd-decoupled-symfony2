@@ -10,7 +10,6 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
 
-
 /**
  * Class ViewUserRequest
  * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
@@ -34,4 +33,4 @@ class ViewUserRequest
     {
         return $this->userId;
     }
-} 
+}

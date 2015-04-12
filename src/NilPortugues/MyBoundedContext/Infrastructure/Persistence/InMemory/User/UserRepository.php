@@ -13,7 +13,8 @@ namespace NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\User
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\User\User;
-
+use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
+use NilPortugues\MyBoundedContext\Infrastructure\Factory\User\UserFactory;
 
 /**
  * Class UserRepositoryInterface
@@ -21,6 +22,9 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\User;
  */
 class UserRepository implements UserRepositoryInterface
 {
+    /**
+     * @var array
+     */
     private $db = [];
 
     /**
@@ -28,24 +32,25 @@ class UserRepository implements UserRepositoryInterface
      */
     public function __construct(array $users)
     {
-        foreach($users as $user) {
+        foreach ($users as $user) {
             $userId = $user['userId'];
-            $this->db[$userId] = new User($userId, $user['username'], $user['email']);
+            $this->db[$userId] = UserFactory::create($userId, $user['username'], $user['email']);
         }
     }
 
     /**
-     * @param $userId
+     * @param UserId $userId
      *
      * @return User
      * @throws UserNotFoundException
      */
-    public function find($userId)
+    public function find(UserId $userId)
     {
+        $userId = $userId->get();
         if (false === array_key_exists($userId, $this->db)) {
-           throw new UserNotFoundException(sprintf('User with id %s not found', $userId));
+            throw new UserNotFoundException(sprintf('User with id %s not found', $userId));
         }
 
         return clone $this->db[$userId];
     }
-} 
+}

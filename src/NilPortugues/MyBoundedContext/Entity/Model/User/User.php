@@ -10,35 +10,37 @@
 
 namespace NilPortugues\MyBoundedContext\Entity\Model\User;
 
-use DateTime;
-
-
 /**
  * Class User
  * @package NilPortugues\MyBoundedContext\Entity\Model\User
  */
 class User
 {
+    /**
+     * @var UserId
+     */
     private $userId;
-    private $username;
-    private $email;
-
-    public function __construct($userId, $username, $email)
-    {
-        $this->userId = $userId;
-        $this->username = $username;
-        $this->email = $email;
-    }
 
     /**
-     * @param mixed $userId
-     *
-     * @return $this
+     * @var UserName
      */
-    public function setUserId($userId)
+    private $username;
+
+    /**
+     * @var Email
+     */
+    private $email;
+
+    /**
+     * @param UserId   $userId
+     * @param UserName $username
+     * @param Email    $email
+     */
+    public function __construct(UserId $userId, UserName $username, Email $email)
     {
-        $this->userId = $userId;
-        return $this;
+        $this->userId   = $userId;
+        $this->username = $username;
+        $this->email    = $email;
     }
 
     /**
@@ -50,18 +52,18 @@ class User
     }
 
     /**
-     * @param mixed $username
+     * @param UserName $username
      *
      * @return $this
      */
-    public function setUsername($username)
+    public function setUsername(UserName $username)
     {
         $this->username = $username;
         return $this;
     }
 
     /**
-     * @return mixed
+     * @return UserName
      */
     public function getUsername()
     {
@@ -69,21 +71,21 @@ class User
     }
 
     /**
-     * @param mixed $email
+     * @param Email $email
      *
      * @return $this
      */
-    public function setEmail($email)
+    public function setEmail(Email $email)
     {
         $this->email = $email;
         return $this;
     }
 
     /**
-     * @return mixed
+     * @return Email
      */
     public function getEmail()
     {
         return $this->email;
     }
-} 
+}

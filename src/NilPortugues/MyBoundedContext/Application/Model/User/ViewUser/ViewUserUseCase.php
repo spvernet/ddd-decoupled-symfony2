@@ -13,7 +13,7 @@ namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
 use InvalidArgumentException;
-
+use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 
 /**
  * Class ViewUserUseCase
@@ -40,16 +40,15 @@ class ViewUserUseCase
     public function execute(ViewUserRequest $request)
     {
         try {
-            $user = $this->userRepository->find($request->getUserId());
+            $user = $this->userRepository->find(new UserId($request->getUserId()));
 
             return new ViewUserResponse(
                 $user->getUserId(),
                 $user->getUsername(),
                 $user->getEmail()
             );
-
         } catch (UserNotFoundException $e) {
             throw new InvalidArgumentException($e->getMessage());
         }
     }
-} 
+}

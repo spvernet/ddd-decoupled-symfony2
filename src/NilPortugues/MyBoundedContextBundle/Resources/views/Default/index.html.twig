@@ -4,7 +4,15 @@
     <h1>Homepage</h1>
 
     <ul>
-        <li><a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : 1}) }}">Load data for user 1</a></li>
-        <li><a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : 2}) }}">Load data for user 2 (will fail)</a></li>
+        <li>
+            <a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : '1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d'}) }}">
+                Load data for user 1
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('nil_portugues_my_bounded_context_view_user', {id : '00000000-0000-0000-0000-000000000000'}) }}">
+                Load data for user 2 (will fail)
+            </a>
+        </li>
     </ul>
 {% endblock %}

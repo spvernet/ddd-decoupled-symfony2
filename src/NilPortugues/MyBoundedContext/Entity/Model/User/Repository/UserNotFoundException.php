@@ -10,12 +10,10 @@
 
 namespace NilPortugues\MyBoundedContext\Entity\Model\User\Repository;
 
-
 /**
  * Class UserNotFoundException
  * @package NilPortugues\MyBoundedContext\Entity\Model\User\Repository
  */
 class UserNotFoundException extends \Exception
 {
-
-} 
+}

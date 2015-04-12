@@ -42,7 +42,6 @@ class DefaultController extends Controller
                 'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
                 ['user' => $response]
             );
-
         } catch (\InvalidArgumentException $e) {
             $render = $this->render(
                 'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
