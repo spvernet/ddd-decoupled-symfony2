@@ -38,17 +38,15 @@ class DefaultController extends Controller
             $request = new ViewUserRequest($request->get('id'));
             $response = $viewUser->execute($request);
 
-            $render = $this->render(
-                'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
-                ['user' => $response]
-            );
+            $render = ['user' => $response];
+
         } catch (\InvalidArgumentException $e) {
-            $render = $this->render(
-                'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
-                ['error_msg' => $e->getMessage()]
-            );
+            $render = ['error_msg' => $e->getMessage()];
         }
 
-        return $render;
+        return $this->render(
+            'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
+            $render
+        );
     }
 }
