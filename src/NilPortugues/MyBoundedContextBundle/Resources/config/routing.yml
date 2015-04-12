@@ -4,4 +4,8 @@ nil_portugues_my_bounded_context_homepage:
 
 nil_portugues_my_bounded_context_view_user:
     path:     /user/{id}
-    defaults: { _controller: NilPortuguesMyBoundedContextBundle:Default:loadUser }
+    defaults: { _controller: NilPortuguesMyBoundedContextBundle:User:viewUser }
+
+nil_portugues_my_bounded_context_view_post:
+    path:     /blog/post/{id}
+    defaults: { _controller: NilPortuguesMyBoundedContextBundle:BlogPost:viewPost }

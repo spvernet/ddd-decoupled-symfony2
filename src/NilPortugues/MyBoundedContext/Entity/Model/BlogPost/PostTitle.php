@@ -70,7 +70,8 @@ class PostTitle
         $validator = new PostTitleValidator();
 
         if (false === $validator->isValid($postTitle)) {
-            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
     }
 }

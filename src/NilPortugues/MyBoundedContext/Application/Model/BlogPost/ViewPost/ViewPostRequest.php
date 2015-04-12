@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\Post\ViewPost;
+namespace NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost;
 
 /**
  * Class ViewPostRequest
- * @package NilPortugues\MyBoundedContext\Application\Model\Post\ViewPost
+ * @package NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost
  */
 class ViewPostRequest
 {

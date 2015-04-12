@@ -22,6 +22,15 @@
     <h2>Blog Posts:</h2>
     <p> - Demonstration of a Post Aggregate</p>
     <ul>
+        <li>Load a post with an invalid Id. <i>(Validation in command bus chain)</i></li>
+        <li>
+            <a href="{{ path('nil_portugues_my_bounded_context_view_post', {id : '2e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d'}) }}">
+                Load existing Post with a valid Id.</a> <i>Data from repository.</i>
+        </li>
+        <li>
+            <a href="{{ path('nil_portugues_my_bounded_context_view_post', {id : '00000000-0000-0000-0000-000000000000'}) }}">
+                Load a non-existent Post with a valid Id (will fail).</a> <i>Exception from repository.</i>
+        </li>
     </ul>
 
     <hr>

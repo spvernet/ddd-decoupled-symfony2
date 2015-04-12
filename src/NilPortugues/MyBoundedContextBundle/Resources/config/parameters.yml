@@ -1,3 +1,3 @@
-parameters:
-    user_array:
-      - { userId: 1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d, username: Nil, email: contact@nilportugues.com }
+imports:
+    - { resource: fixtures/user_array.yml }
+    - { resource: fixtures/post_array.yml }

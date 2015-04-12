@@ -70,7 +70,8 @@ class UserName
         $validator = new UserNameValidator();
 
         if (false === $validator->isValid($username)) {
-            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
     }
 }

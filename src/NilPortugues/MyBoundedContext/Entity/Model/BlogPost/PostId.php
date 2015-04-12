@@ -68,7 +68,8 @@ class PostId
         $validator = new PostIdValidator();
 
         if (false === $validator->isValid($id)) {
-            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
     }
 }

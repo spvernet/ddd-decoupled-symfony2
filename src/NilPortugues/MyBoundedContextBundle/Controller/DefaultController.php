@@ -1,10 +1,16 @@
 <?php
+/**
+ * Author: Nil Portugués Calderó <contact@nilportugues.com>
+ * Date: 4/12/15
+ * Time: 6:06 PM
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
-use NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserRequest;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class DefaultController
@@ -17,35 +23,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render(
-            'NilPortuguesMyBoundedContextBundle:Default:index.html.twig'
-        );
-    }
-
-    /**
-     * @param Request $request
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function loadUserAction(Request $request)
-    {
-        try {
-            /** @var \NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserUseCase $viewUser */
-            $viewUser = $this->get(
-                'nil_portugues.my_bounded_context.application.model.user.view_user.view_user_use_case'
-            );
-
-            $request = new ViewUserRequest($request->get('id'));
-            $response = $viewUser->execute($request);
-
-            $render = ['user' => $response];
-        } catch (\InvalidArgumentException $e) {
-            $render = ['error_msg' => $e->getMessage()];
-        }
-
-        return $this->render(
-            'NilPortuguesMyBoundedContextBundle:Default:user.html.twig',
-            $render
-        );
+        return $this->render('NilPortuguesMyBoundedContextBundle:Default:index.html.twig');
     }
 }

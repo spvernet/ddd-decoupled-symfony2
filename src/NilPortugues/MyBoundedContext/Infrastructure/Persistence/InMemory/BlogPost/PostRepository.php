@@ -38,7 +38,8 @@ class PostRepository implements PostRepositoryInterface
                 $postId,
                 $post['authorId'],
                 $post['title'],
-                $post['body']
+                $post['body'],
+                $post['createdAt']
             );
         }
     }

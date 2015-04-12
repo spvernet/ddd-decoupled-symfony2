@@ -43,10 +43,11 @@ class PostTitleValidator
      */
     public function isValid($postId)
     {
-        $stringValidator = $this->validator->isString('postTitle')
+        $stringValidator = $this->validator
+            ->isString('postTitle')
             ->isNotNull()
             ->isBetween(3, 80, true)
-            ->hasGraphicalCharsOnly();
+            ->hasPrintableCharsOnly();
 
         $isValid = $stringValidator->validate($postId);
 

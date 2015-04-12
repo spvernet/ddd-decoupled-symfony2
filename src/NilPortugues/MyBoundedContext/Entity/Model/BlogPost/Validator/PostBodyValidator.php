@@ -43,9 +43,10 @@ class PostBodyValidator
      */
     public function isValid($postId)
     {
-        $stringValidator = $this->validator->isString('postBody')
+        $stringValidator = $this->validator
+            ->isString('postBody')
             ->isNotNull()
-            ->hasGraphicalCharsOnly();
+            ->hasPrintableCharsOnly();
 
         $isValid = $stringValidator->validate($postId);
 

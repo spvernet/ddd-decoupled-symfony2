@@ -1,0 +1,8 @@
+parameters:
+  post_array:
+    post1:
+      postId: 2e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d
+      authorId: 1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d # same as user1
+      title: The new Silicon Valley trailer has broken walls, broken dreams, and synergy
+      body: "Mike Judge's slapstick tech world comedy Silicon Valley returns for a second season next month, and last night HBO unleashed a new trailer to make the wait a little easier. Or harder, depending on how you look at it. The clip features the Pied Piper gang getting ready to brain-battle it out with their Nucleus competitors. How do they do that? \"Getting Pied Piper out there.\" \"Brand awareness.\" \"Synergy, bitches.\"  That, in a nutshell, is what you can expect from this season. Also maybe Gilfoyle setting stacks of cash on fire and Jared speaking with the soft cadence of a nervous angel. The season premieres on April 12th."
+      createdAt: "2015-04-12 18:29:20"

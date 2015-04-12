@@ -68,7 +68,8 @@ class UserId
         $validator = new UserIdValidator();
 
         if (false === $validator->isValid($id)) {
-            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
     }
 }

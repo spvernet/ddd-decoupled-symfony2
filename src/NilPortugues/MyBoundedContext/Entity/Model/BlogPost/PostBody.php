@@ -70,7 +70,8 @@ class PostBody
         $validator = new PostBodyValidator();
 
         if (false === $validator->isValid($postBody)) {
-            throw new InvalidArgumentException(implode(' ', array_pop($validator->getErrors())));
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
     }
 }

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if post is defined %}
+    <h1>Blog post</h1>
+    <ul>
+        <li><strong>Post Id:</strong> {{post.postId}}</li>
+        <li><strong>Author Id:</strong> {{post.authorId}}</li>
+        <li><strong>Created at:</strong> {{post.createdAt}}</li>
+        <li><strong>Title:</strong> {{post.postTitle}}</li>
+        <li><strong>Body:</strong> {{post.postBody}}</li>
+    </ul>
+    {% else %}
+        <h1>Error!</h1>
+        <h3>{{ error_msg }}</h3>
+    {% endif %}
+    <br><br>
+    <a href="{{ path('nil_portugues_my_bounded_context_homepage') }}">Back to homepage</a>
+{% endblock %}

@@ -57,7 +57,7 @@ class Post
         $this->authorId = $authorId;
         $this->postTitle = $title;
         $this->postBody = $body;
-        $this->createdAt = (null === $createdAt) ? new DateTime() : new DateTime($createdAt);
+        $this->createdAt = (null === $createdAt) ? new DateTime() : $createdAt;
     }
 
     /**

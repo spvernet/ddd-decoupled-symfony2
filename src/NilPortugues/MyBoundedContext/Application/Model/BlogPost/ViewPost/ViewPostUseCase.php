@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\Post\ViewPost;
+namespace NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost;
 
 use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Post;
 use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\Repository\PostNotFoundException;
@@ -18,7 +18,7 @@ use NilPortugues\MyBoundedContext\Entity\Model\BlogPost\PostId;
 
 /**
  * Class ViewPostUseCase
- * @package NilPortugues\MyBoundedContext\Application\Model\Post\ViewPost
+ * @package NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost
  */
 class ViewPostUseCase
 {
