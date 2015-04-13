@@ -33,7 +33,7 @@ class UserRepository implements UserRepositoryInterface
     public function __construct(array $users)
     {
         foreach ($users as $user) {
-            $userId = $user['userId'];
+            $userId = $user['email'];
             $this->db[$userId] = UserFactory::create($userId, $user['username'], $user['email'], $user['registeredOn']);
         }
     }

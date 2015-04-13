@@ -2,6 +2,7 @@
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
+use NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser\SignUpUserCommand;
 use NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -28,11 +29,16 @@ class UserController extends Controller
 
     /**
      * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function registerUserAction(Request $request)
     {
-        print_r($request);
-        die();
+        $commandBus = $this->get(self::VALIDATION_BUS);
+        $response = $commandBus->handle(
+            new SignUpUserCommand($request->get('email'), $request->get('username'))
+        );
+
+        return $this->render(self::TWIG_VIEW_USER, ['user' =>  $response]);
     }
 
     /**

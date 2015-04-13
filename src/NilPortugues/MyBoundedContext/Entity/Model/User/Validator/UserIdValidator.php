@@ -43,7 +43,7 @@ class UserIdValidator
      */
     public function isValid($userId)
     {
-        $stringValidator = $this->validator->isString('userId')->isUUID(true);
+        $stringValidator = $this->validator->isString('email')->isUUID(true);
         $isValid         = $stringValidator->validate($userId);
 
         if (false === $isValid) {

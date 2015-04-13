@@ -1,7 +1,7 @@
 parameters:
   user_array:
     user1:
-      userId: 1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d
+      email: 1e58fe7d-cfbb-4fa7-b919-7a0ccd940e7d
       username: Nil
       email: contact@nilportugues.com
       registeredOn: "2015-03-21 18:16"
