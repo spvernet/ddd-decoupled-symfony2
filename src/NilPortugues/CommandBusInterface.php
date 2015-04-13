@@ -17,13 +17,6 @@ namespace NilPortugues;
 interface CommandBusInterface
 {
     /**
-     * @param                     $container
-     * @param array               $handlers
-     * @param CommandBusInterface $next
-     */
-    public function __construct($container, array $handlers, CommandBusInterface $next = null);
-
-    /**
      * @param $command
      *
      * @return mixed

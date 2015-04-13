@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\EmailValidator;
 
 /**
  * Class SignUpUserCommand
- * @package NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\SignUp
  */
 class SignUpUserCommandValidator
 {

@@ -2,7 +2,7 @@
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
-use NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser\SignUpUserCommand;
+use NilPortugues\MyBoundedContext\Application\Model\User\SignUp\SignUpUserCommand;
 use NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

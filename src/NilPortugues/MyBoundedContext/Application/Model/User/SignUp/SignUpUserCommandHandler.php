@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
 use DateTime;
 use InvalidArgumentException;
@@ -17,7 +17,7 @@ use NilPortugues\MyBoundedContext\Infrastructure\Factory\User\UserFactory;
 
 /**
  * Class SignUpUserCommandHandler
- * @package NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\SignUp
  */
 class SignUpUserCommandHandler
 {

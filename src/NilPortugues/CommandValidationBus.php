@@ -19,6 +19,18 @@ use RuntimeException;
 class CommandValidationBus extends BaseCommandBus
 {
     /**
+     * @param                     $container
+     * @param array               $handlers
+     * @param CommandBusInterface $next
+     */
+    public function __construct($container, array $handlers, CommandBusInterface $next = null)
+    {
+        $this->service  = $container;
+        $this->handlers = $handlers;
+        $this->next     = $next;
+    }
+
+    /**
      * @param $command
      *
      * @return mixed

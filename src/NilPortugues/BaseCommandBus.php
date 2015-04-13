@@ -38,17 +38,6 @@ abstract class BaseCommandBus implements CommandBusInterface
      */
     protected $errors = [];
 
-    /**
-     * @param                     $container
-     * @param array               $handlers
-     * @param CommandBusInterface $next
-     */
-    public function __construct($container, array $handlers, CommandBusInterface $next = null)
-    {
-        $this->service  = $container;
-        $this->handlers = $handlers;
-        $this->next     = $next;
-    }
 
     /**
      * @return array

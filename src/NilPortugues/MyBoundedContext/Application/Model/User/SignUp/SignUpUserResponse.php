@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
 /**
  * Class SignUpUserResponse
- * @package NilPortugues\MyBoundedContext\Application\Model\SignUp\SignUpUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\SignUp
  */
 class SignUpUserResponse
 {
