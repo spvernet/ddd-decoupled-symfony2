@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserIdValidator;
 
 /**
  * Class ViewUserCommand
- * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\View
  */
 class ViewUserCommandValidator
 {
@@ -44,6 +44,7 @@ class ViewUserCommandValidator
     public function handle(ViewUserCommand $command)
     {
         $result = $this->validator->isValid($command->getUserId());
+
         if (false === $result) {
             $this->errors = $this->validator->getErrors();
         }

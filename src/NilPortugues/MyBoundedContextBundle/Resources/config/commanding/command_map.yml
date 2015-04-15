@@ -1,4 +1,5 @@
 parameters:
   command_bus_map:
-    "NilPortugues\MyBoundedContext\Application\Model\User\ViewUser\ViewUserCommand": nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler
+    "NilPortugues\MyBoundedContext\Application\Model\User\View\ViewUserCommand": nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler
+    "NilPortugues\MyBoundedContext\Application\Model\User\SignUp\SignUpUserCommand": nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_handler
     "NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostCommand": nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler

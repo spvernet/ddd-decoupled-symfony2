@@ -23,7 +23,7 @@ class CommandValidationBus extends BaseCommandBus
      * @param array               $handlers
      * @param CommandBusInterface $next
      */
-    public function __construct($container, array $handlers, CommandBusInterface $next = null)
+    public function __construct($container, array $handlers, CommandBusInterface $next)
     {
         $this->service  = $container;
         $this->handlers = $handlers;
@@ -45,13 +45,14 @@ class CommandValidationBus extends BaseCommandBus
         $commandHandler = $this->service->get($this->handlers[$commandClass]);
 
 
-        if (false === $commandHandler->handle($command)) {
+        if (true !== $commandHandler->handle($command)) {
             $this->errors = $commandHandler->getErrors();
 
             throw new RuntimeException(
-                sprintf('Error occurred in the %s when handling: %s', __CLASS__, $command)
+                sprintf('Error occurred in the %s when handling: %s', __CLASS__, $commandClass)
             );
         }
+
 
         return $this->next->handle($command);
     }

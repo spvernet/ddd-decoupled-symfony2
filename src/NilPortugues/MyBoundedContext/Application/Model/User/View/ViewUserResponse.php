@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
 /**
  * Class ViewUserResponse
- * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\View
  */
 class ViewUserResponse
 {

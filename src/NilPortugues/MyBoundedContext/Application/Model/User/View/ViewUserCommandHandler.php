@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\Model\User\ViewUser;
+namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
@@ -17,7 +17,7 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 
 /**
  * Class ViewUserCommandHandler
- * @package NilPortugues\MyBoundedContext\Application\Model\User\ViewUser
+ * @package NilPortugues\MyBoundedContext\Application\Model\User\View
  */
 class ViewUserCommandHandler
 {
@@ -40,6 +40,7 @@ class ViewUserCommandHandler
     public function handle(ViewUserCommand $request)
     {
         try {
+
             $user = $this->userRepository->find(new UserId($request->getUserId()));
 
             return new ViewUserResponse(

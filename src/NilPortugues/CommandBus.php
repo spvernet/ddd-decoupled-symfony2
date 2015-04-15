@@ -42,8 +42,10 @@ class CommandBus extends BaseCommandBus
         $commandClass = get_class($command);
         $this->commandMappedToCommandHandlerGuard($commandClass);
 
+        $commandHandler =  $this->service->get($this->handlers[$commandClass]);
+
         try {
-            return $this->service->get($this->handlers[$commandClass])->handle($command);
+            return $commandHandler->handle($command);
         } catch (\Exception $e) {
             $this->errors[] = $e->getMessage();
             throw new RuntimeException(

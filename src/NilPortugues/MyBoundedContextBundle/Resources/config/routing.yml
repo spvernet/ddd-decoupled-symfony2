@@ -2,12 +2,13 @@ nil_portugues_my_bounded_context_homepage:
     path:     /
     defaults: { _controller: NilPortuguesMyBoundedContextBundle:Default:index }
 
+
 nil_portugues_my_bounded_context_register_user:
     path:     /user/register
     defaults: { _controller: NilPortuguesMyBoundedContextBundle:User:registerUser }
 
 nil_portugues_my_bounded_context_new_user:
-    path:     /user/sign-up
+    path:     /user/sign_up
     defaults: { _controller: NilPortuguesMyBoundedContextBundle:User:newUser }
 
 nil_portugues_my_bounded_context_view_user:
