@@ -42,7 +42,8 @@ class CommandBus extends BaseCommandBus
         $commandClass = get_class($command);
         $this->commandMappedToCommandHandlerGuard($commandClass);
 
-        $commandHandler =  $this->service->get($this->handlers[$commandClass]);
+        $commandClassKey = str_replace('\\', '_', $commandClass);
+        $commandHandler = $this->service->get($this->handlers[$commandClassKey]);
 
         try {
             return $commandHandler->handle($command);

@@ -4,7 +4,12 @@ services:
         arguments:
           - "%user_array%"
 
-    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog_post.post_repository:
-        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\BlogPost\PostRepository
+    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog.post.post_repository:
+        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\Blog\Post\PostRepository
         arguments:
           - "%post_array%"
+
+    nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog.category.category_repository:
+        class: NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\Blog\Category\CategoryRepository
+        arguments:
+          - "%category_array%"

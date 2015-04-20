@@ -40,7 +40,6 @@ class ViewUserCommandHandler
     public function handle(ViewUserCommand $request)
     {
         try {
-
             $user = $this->userRepository->find(new UserId($request->getUserId()));
 
             return new ViewUserResponse(

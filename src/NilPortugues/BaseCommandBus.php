@@ -48,15 +48,16 @@ abstract class BaseCommandBus implements CommandBusInterface
     }
 
     /**
-     * @param string $command
+     * @param string $commandClass
      *
      * @throws \RuntimeException
      */
-    protected function commandMappedToCommandHandlerGuard($command)
+    protected function commandMappedToCommandHandlerGuard($commandClass)
     {
-        if (false === array_key_exists($command, $this->handlers)) {
+        $commandClassKey = str_replace('\\', '_', $commandClass);
+        if (false === array_key_exists($commandClassKey, $this->handlers)) {
             throw new RuntimeException(
-                sprintf('Command %s has no Command Handler assigned.', $command)
+                sprintf('%s has no Command Handler assigned in %s.', $commandClass, get_class($this))
             );
         }
     }

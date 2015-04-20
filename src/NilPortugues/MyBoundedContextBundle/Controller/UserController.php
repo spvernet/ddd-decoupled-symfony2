@@ -42,9 +42,9 @@ class UserController extends Controller
 
             return $this->render(self::TWIG_VIEW_USER, ['user' =>  $response]);
         } catch (\Exception $e) {
-           print_r($commandBus->getErrors()); die();
+            print_r($commandBus->getErrors());
+            die();
         }
-
     }
 
     /**

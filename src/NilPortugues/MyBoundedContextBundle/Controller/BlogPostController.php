@@ -10,7 +10,7 @@
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
-use NilPortugues\MyBoundedContext\Application\Model\BlogPost\ViewPost\ViewPostCommand;
+use NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
