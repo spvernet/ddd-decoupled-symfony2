@@ -34,33 +34,6 @@ class PostBody
     }
 
     /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->postBody;
-    }
-
-    /**
-     * @return string
-     */
-    public function get()
-    {
-        return $this->postBody;
-    }
-
-    /**
-     * @param PostBody $object
-     *
-     * @return bool
-     */
-    public function equals(self $object)
-    {
-        return $this->get() === $object->get();
-    }
-
-
-    /**
      * @param $postBody
      *
      * @throws \InvalidArgumentException
@@ -73,5 +46,31 @@ class PostBody
             $errors = $validator->getErrors();
             throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->postBody;
+    }
+
+    /**
+     * @param PostBody $object
+     *
+     * @return bool
+     */
+    public function equals(self $object)
+    {
+        return $this->get() === $object->get();
+    }
+
+    /**
+     * @return string
+     */
+    public function get()
+    {
+        return $this->postBody;
     }
 }

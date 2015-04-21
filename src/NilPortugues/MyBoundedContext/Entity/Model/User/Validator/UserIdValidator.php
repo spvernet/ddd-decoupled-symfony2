@@ -44,7 +44,7 @@ class UserIdValidator
     public function isValid($userId)
     {
         $stringValidator = $this->validator->isString('userId')->isUUID(true);
-        $isValid         = $stringValidator->validate($userId);
+        $isValid = $stringValidator->validate($userId);
 
         if (false === $isValid) {
             $this->errors = $stringValidator->getErrors();

@@ -45,14 +45,19 @@ class Post
     private $createdAt;
 
     /**
-     * @param PostId    $id
-     * @param UserId    $authorId
+     * @param PostId $id
+     * @param UserId $authorId
      * @param PostTitle $title
-     * @param PostBody  $body
-     * @param DateTime  $createdAt
+     * @param PostBody $body
+     * @param DateTime $createdAt
      */
-    public function __construct(PostId $id, UserId $authorId, PostTitle $title, PostBody $body, DateTime $createdAt = null)
-    {
+    public function __construct(
+        PostId $id,
+        UserId $authorId,
+        PostTitle $title,
+        PostBody $body,
+        DateTime $createdAt = null
+    ) {
         $this->postId = $id;
         $this->authorId = $authorId;
         $this->postTitle = $title;

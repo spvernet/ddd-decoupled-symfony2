@@ -3,14 +3,14 @@
 {% block body %}
 
     {% if post is defined %}
-    <h1>Blog post</h1>
-    <ul>
-        <li><strong>Post Id:</strong> {{post.postId}}</li>
-        <li><strong>Author Id:</strong> {{post.authorId}}</li>
-        <li><strong>Created at:</strong> {{post.createdAt}}</li>
-        <li><strong>Title:</strong> {{post.postTitle}}</li>
-        <li><strong>Body:</strong> {{post.postBody}}</li>
-    </ul>
+        <h1>Blog post</h1>
+        <ul>
+            <li><strong>Post Id:</strong> {{ post.postId }}</li>
+            <li><strong>Author Id:</strong> {{ post.authorId }}</li>
+            <li><strong>Created at:</strong> {{ post.createdAt }}</li>
+            <li><strong>Title:</strong> {{ post.postTitle }}</li>
+            <li><strong>Body:</strong> {{ post.postBody }}</li>
+        </ul>
     {% else %}
         <h1>Error!</h1>
         <p>The following errors occurred:</p>

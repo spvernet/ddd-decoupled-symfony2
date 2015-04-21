@@ -41,10 +41,10 @@ class SignUpUserResponse
      */
     public function __construct($userId, $username, $email, $registeredOn)
     {
-        $this->userId = (string) $userId;
-        $this->username = (string) $username;
-        $this->email = (string) $email;
-        $this->registeredOn = (string) $registeredOn;
+        $this->userId = (string)$userId;
+        $this->username = (string)$username;
+        $this->email = (string)$email;
+        $this->registeredOn = (string)$registeredOn;
     }
 
     /**

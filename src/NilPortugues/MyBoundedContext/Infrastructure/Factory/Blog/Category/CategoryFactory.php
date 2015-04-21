@@ -10,11 +10,11 @@
 
 namespace NilPortugues\MyBoundedContext\Infrastructure\Factory\Blog\Category;
 
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Factory\CategoryFactoryInterface;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Category;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryName;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryId;
 use DateTime;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Category;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryId;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryName;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Factory\CategoryFactoryInterface;
 
 /**
  * Class CategoryFactoryInterface

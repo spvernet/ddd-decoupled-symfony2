@@ -10,11 +10,11 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost;
 
+use InvalidArgumentException;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Post;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostId;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Repository\PostNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Repository\PostRepositoryInterface;
-use InvalidArgumentException;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostId;
 
 /**
  * Class ViewPostCommandHandler
@@ -23,7 +23,7 @@ use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostId;
 class ViewPostCommandHandler
 {
     private $postRepository;
-    
+
     /**
      * @param PostRepositoryInterface $postRepository
      */
@@ -41,7 +41,7 @@ class ViewPostCommandHandler
     public function handle(ViewPostCommand $request)
     {
         try {
-            /** @var Post $post  */
+            /** @var Post $post */
             $post = $this->postRepository->find(new PostId($request->getPostId()));
 
             return new ViewPostResponse(

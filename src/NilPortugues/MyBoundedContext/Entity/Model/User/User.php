@@ -39,16 +39,16 @@ class User
     private $registeredOn;
 
     /**
-     * @param UserId   $userId
+     * @param UserId $userId
      * @param UserName $username
-     * @param Email    $email
+     * @param Email $email
      * @param DateTime $registeredOn
      */
     public function __construct(UserId $userId, UserName $username, Email $email, DateTime $registeredOn = null)
     {
-        $this->userId       = $userId;
-        $this->username     = $username;
-        $this->email        = $email;
+        $this->userId = $userId;
+        $this->username = $username;
+        $this->email = $email;
         $this->registeredOn = (null === $registeredOn) ? new DateTime() : $registeredOn;
         ;
     }
@@ -70,6 +70,14 @@ class User
     }
 
     /**
+     * @return UserName
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
      * @param UserName $username
      *
      * @return $this
@@ -81,11 +89,11 @@ class User
     }
 
     /**
-     * @return UserName
+     * @return Email
      */
-    public function getUsername()
+    public function getEmail()
     {
-        return $this->username;
+        return $this->email;
     }
 
     /**
@@ -97,13 +105,5 @@ class User
     {
         $this->email = $email;
         return $this;
-    }
-
-    /**
-     * @return Email
-     */
-    public function getEmail()
-    {
-        return $this->email;
     }
 }

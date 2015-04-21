@@ -40,7 +40,7 @@ class UserController extends Controller
                 new SignUpUserCommand($request->get('email'), $request->get('username'))
             );
 
-            return $this->render(self::TWIG_VIEW_USER, ['user' =>  $response]);
+            return $this->render(self::TWIG_VIEW_USER, ['user' => $response]);
         } catch (\Exception $e) {
             print_r($commandBus->getErrors());
             die();
@@ -58,7 +58,7 @@ class UserController extends Controller
 
         try {
             $response = $commandBus->handle(new ViewUserCommand($request->get('id')));
-            return $this->render(self::TWIG_VIEW_USER, ['user' =>  $response]);
+            return $this->render(self::TWIG_VIEW_USER, ['user' => $response]);
         } catch (\Exception $e) {
             return $this
                 ->render(self::TWIG_VIEW_USER, ['error_msg' => $commandBus->getErrors()])

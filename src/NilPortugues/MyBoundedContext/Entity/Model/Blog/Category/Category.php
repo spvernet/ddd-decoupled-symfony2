@@ -34,9 +34,9 @@ class Category
     private $name;
 
     /**
-     * @param CategoryId   $categoryId
+     * @param CategoryId $categoryId
      * @param CategoryName $name
-     * @param DateTime     $createdAt
+     * @param DateTime $createdAt
      */
     public function __construct(CategoryId $categoryId, CategoryName $name, DateTime $createdAt = null)
     {
@@ -44,18 +44,6 @@ class Category
         $this->name = $name;
         $this->createdAt = $createdAt;
     }
-
-    /**
-     * @param \NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryName $name
-     *
-     * @return $this
-     */
-    public function setName(CategoryName $name)
-    {
-        $this->name = $name;
-        return $this;
-    }
-
 
     /**
      * @return \NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryId
@@ -79,5 +67,16 @@ class Category
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @param \NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryName $name
+     *
+     * @return $this
+     */
+    public function setName(CategoryName $name)
+    {
+        $this->name = $name;
+        return $this;
     }
 }

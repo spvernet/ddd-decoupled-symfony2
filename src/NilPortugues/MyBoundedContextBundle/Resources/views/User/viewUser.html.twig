@@ -3,26 +3,26 @@
 {% block body %}
 
     {% if user is defined %}
-    <h1>User profile</h1>
-    <ul>
-        <li><strong>User Id:</strong> {{user.email}}</li>
-        <li><strong>Username:</strong> {{user.username}}</li>
-        <li><strong>Email:</strong> {{user.email}}</li>
-        <li><strong>Registered on:</strong> {{user.registeredOn}}</li>
-    </ul>
+        <h1>User profile</h1>
+        <ul>
+            <li><strong>User Id:</strong> {{ user.email }}</li>
+            <li><strong>Username:</strong> {{ user.username }}</li>
+            <li><strong>Email:</strong> {{ user.email }}</li>
+            <li><strong>Registered on:</strong> {{ user.registeredOn }}</li>
+        </ul>
     {% else %}
         <h1>Error!</h1>
         <p>The following errors occurred:</p>
         <ul>
-        {% for errorMessage in error_msg %}
-            {% if errorMessage is iterable %}
-                {% for subErrorMessage in errorMessage %}
-                    <li>{{ subErrorMessage }}</li>
-                {% endfor %}
-            {% else %}
-                <li>{{ errorMessage }}</li>
-            {% endif %}
-        {% endfor %}
+            {% for errorMessage in error_msg %}
+                {% if errorMessage is iterable %}
+                    {% for subErrorMessage in errorMessage %}
+                        <li>{{ subErrorMessage }}</li>
+                    {% endfor %}
+                {% else %}
+                    <li>{{ errorMessage }}</li>
+                {% endif %}
+            {% endfor %}
         </ul>
     {% endif %}
     <br><br>

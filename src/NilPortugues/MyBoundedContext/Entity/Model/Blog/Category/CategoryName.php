@@ -34,33 +34,6 @@ class CategoryName
     }
 
     /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->categoryName;
-    }
-
-    /**
-     * @return string
-     */
-    public function get()
-    {
-        return $this->categoryName;
-    }
-
-    /**
-     * @param CategoryName $object
-     *
-     * @return bool
-     */
-    public function equals(self $object)
-    {
-        return $this->get() === $object->get();
-    }
-
-
-    /**
      * @param $categoryName
      *
      * @throws \InvalidArgumentException
@@ -73,5 +46,31 @@ class CategoryName
             $errors = $validator->getErrors();
             throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->categoryName;
+    }
+
+    /**
+     * @param CategoryName $object
+     *
+     * @return bool
+     */
+    public function equals(self $object)
+    {
+        return $this->get() === $object->get();
+    }
+
+    /**
+     * @return string
+     */
+    public function get()
+    {
+        return $this->categoryName;
     }
 }

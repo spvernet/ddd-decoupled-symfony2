@@ -25,7 +25,7 @@ class SignUpUserCommandHandler
      * @var UserRepositoryInterface
      */
     private $userRepository;
-    
+
     /**
      * @param UserRepositoryInterface $userRepository
      */

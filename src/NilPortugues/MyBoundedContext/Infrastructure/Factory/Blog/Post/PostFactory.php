@@ -10,13 +10,13 @@
 
 namespace NilPortugues\MyBoundedContext\Infrastructure\Factory\Blog\Post;
 
+use DateTime;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Factory\PostFactoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Post;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostBody;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostId;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostTitle;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
-use DateTime;
 
 /**
  * Class PostFactoryInterface

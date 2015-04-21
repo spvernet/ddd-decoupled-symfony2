@@ -10,9 +10,9 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
+use InvalidArgumentException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
-use InvalidArgumentException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 
 /**
@@ -22,7 +22,7 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
 class ViewUserCommandHandler
 {
     private $userRepository;
-    
+
     /**
      * @param UserRepositoryInterface $userRepository
      */

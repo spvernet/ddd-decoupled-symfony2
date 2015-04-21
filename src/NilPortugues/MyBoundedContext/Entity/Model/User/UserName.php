@@ -34,33 +34,6 @@ class UserName
     }
 
     /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->username;
-    }
-
-    /**
-     * @return string
-     */
-    public function get()
-    {
-        return $this->username;
-    }
-
-    /**
-     * @param UserName $object
-     *
-     * @return bool
-     */
-    public function equals(self $object)
-    {
-        return $this->get() === $object->get();
-    }
-
-
-    /**
      * @param $username
      *
      * @throws \InvalidArgumentException
@@ -73,5 +46,31 @@ class UserName
             $errors = $validator->getErrors();
             throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->username;
+    }
+
+    /**
+     * @param UserName $object
+     *
+     * @return bool
+     */
+    public function equals(self $object)
+    {
+        return $this->get() === $object->get();
+    }
+
+    /**
+     * @return string
+     */
+    public function get()
+    {
+        return $this->username;
     }
 }

@@ -34,33 +34,6 @@ class PostTitle
     }
 
     /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->postTitle;
-    }
-
-    /**
-     * @return string
-     */
-    public function get()
-    {
-        return $this->postTitle;
-    }
-
-    /**
-     * @param PostTitle $object
-     *
-     * @return bool
-     */
-    public function equals(self $object)
-    {
-        return $this->get() === $object->get();
-    }
-
-
-    /**
      * @param $postTitle
      *
      * @throws \InvalidArgumentException
@@ -73,5 +46,31 @@ class PostTitle
             $errors = $validator->getErrors();
             throw new InvalidArgumentException(implode(' ', array_pop($errors)));
         }
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->postTitle;
+    }
+
+    /**
+     * @param PostTitle $object
+     *
+     * @return bool
+     */
+    public function equals(self $object)
+    {
+        return $this->get() === $object->get();
+    }
+
+    /**
+     * @return string
+     */
+    public function get()
+    {
+        return $this->postTitle;
     }
 }

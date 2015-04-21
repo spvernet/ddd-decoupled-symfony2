@@ -26,7 +26,7 @@ class ViewUserCommand
      */
     public function __construct($userId)
     {
-        $this->userId = (string) $userId;
+        $this->userId = (string)$userId;
     }
 
     /**

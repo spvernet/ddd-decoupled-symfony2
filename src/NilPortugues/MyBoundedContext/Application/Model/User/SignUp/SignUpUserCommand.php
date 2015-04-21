@@ -31,8 +31,8 @@ class SignUpUserCommand
      */
     public function __construct($email, $username)
     {
-        $this->email = (string) $email;
-        $this->username = (string) $username;
+        $this->email = (string)$email;
+        $this->username = (string)$username;
     }
 
     /**

@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="109610e0-56ff-41ba-99be-385af6ae3415" name="Default" comment="" />
+    <list default="true" id="109610e0-56ff-41ba-99be-385af6ae3415" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/01/76/927601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/02/99/7f9902" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/06/2f/302f06" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/0a/ff/e0ff0a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/14/79/e67914" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/2e/ae/72ae2e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/3c/86/26863c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/4e/97/10974e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/4f/d0/c6d04f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/58/8c/3a8c58" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/5f/1f/091f5f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/63/26/ac2663" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/6d/f2/faf26d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/72/8f/e38f72" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/76/22/1d2276" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/7a/72/46727a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/8a/ab/a1ab8a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/8a/f7/52f78a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/8f/d1/70d18f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/90/c1/c8c190" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/94/0c/4f0c94" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/a1/a1/23a1a1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/a6/c2/7bc2a6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ac/b2/b2b2ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/b5/3d/973db5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/bb/4b/444bbb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c3/8b/758bc3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c5/e9/9ee9c5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c8/78/9578c8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d1/44/3c44d1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d2/b3/0ab3d2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d4/1e/f01ed4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d5/8e/d58ed5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d6/85/8b85d6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/db/c9/3ac9db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/df/6b/2a6bdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/e1/e8/a7e8e1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ea/b0/52b0ea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ed/bb/7bbbed" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/fe/35/ad35fe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/00/a5/5332e1cd1d0f781bbd722cfd59beff03589722052f4ae61d00b4868b942a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/14/e9/d40172491876859b5d35d426bdab47b26d2acf451778045298349c140770.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1a/f1/291d0e6a810f72e6c6d765d1a3d602e17938c91bbe98b6e4fef48a56eb06.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/21/dd/af5db1a784e7d8703135f376c0f99762b6d5a734a6913b981a8e7efe32b9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/6c/e6055b5ad25f1116defb1ca4b6b73cd17e5cbb84ca812a4a93eb4e65e91e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3f/37/2da804798cb98c6ff4471a2da82227d0238cd8b5d1112913163d9893d04c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/59/0f/df313692a84b6aeecbcb36c16f41b37c52118eb16af37e0ca217cf12f799.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5f/bb/fd1acfe07bdfad93ea6a77edfbb402abb6fb0428da17f691a2527f2edf6f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/82/ae/515a1732186749b1a9f10fac60c6c5dd7321925e6993b72ebeee3d36ac0f.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.php_cs.cache" afterPath="$PROJECT_DIR$/.php_cs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/34/7e/3f355129cf9dfae66267dd9b6378b1e1b75142eb651e56a06c586baac7b9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/34/7e/3f355129cf9dfae66267dd9b6378b1e1b75142eb651e56a06c586baac7b9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/70/41/79128beb360b1fe34e9693d18724e5da67e5a8374ee97e635e0b2c261279.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/70/41/79128beb360b1fe34e9693d18724e5da67e5a8374ee97e635e0b2c261279.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Email.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandHandler.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/User.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommand.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0e/e1/bb43019062ea3c6b694f9079f9309886d18dba06d1b15c95e6dbadbf091c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0e/e1/bb43019062ea3c6b694f9079f9309886d18dba06d1b15c95e6dbadbf091c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/User/newUser.html.twig" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/User/newUser.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/BlogPost/post.html.twig" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/BlogPost/post.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/User/viewUser.html.twig" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/views/User/viewUser.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ddd-decoupled-symfony2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,29 +120,41 @@
       <file leaf-file-name="CommandBus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0" vertical-offset="550" max-vertical-offset="1232">
-              <caret line="44" column="65" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="65" />
+            <state vertical-scroll-proportion="-10.333333" vertical-offset="654" max-vertical-offset="1210">
+              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="53" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DependencyInjectionTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/monolog-bundle/Tests/DependencyInjection/DependencyInjectionTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.083333" vertical-offset="242" max-vertical-offset="968">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandValidationBus.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommandValidationBus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3628049" vertical-offset="598" max-vertical-offset="1298">
-              <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+            <state vertical-scroll-proportion="-7.5833335" vertical-offset="654" max-vertical-offset="1320">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16666667" vertical-offset="0" max-vertical-offset="440">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NilPortuguesMyBoundedContextExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.666667" vertical-offset="66" max-vertical-offset="748">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding>
+                <marker date="1429608589000" expanded="true" signature="75:290" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,31 +169,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="command_validation_map.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commanding/command_validation_map.yml">
+      <file leaf-file-name="commands_buses.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="242">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="command_map.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commanding/command_map.yml">
+      <file leaf-file-name="ContainerInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="242">
-              <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+            <state vertical-scroll-proportion="-9.875" vertical-offset="753" max-vertical-offset="3410">
+              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPostCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php">
+      <file leaf-file-name="ServiceNotFoundException.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Exception/ServiceNotFoundException.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4166665" vertical-offset="180" max-vertical-offset="836">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="-10.083333" vertical-offset="0" max-vertical-offset="1210">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidArgumentException.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Exception/InvalidArgumentException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.083333" vertical-offset="0" max-vertical-offset="440">
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -98,8 +212,8 @@
       <file leaf-file-name="BaseCommandBus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/BaseCommandBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0" vertical-offset="752" max-vertical-offset="1386">
-              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="198" max-vertical-offset="1386">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -153,6 +267,7 @@
         <option value="$PROJECT_DIR$/src/NilPortugues/BaseCommandBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -162,8 +277,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="826" />
+    <option name="width" value="1280" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,7 +303,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,18 +339,98 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NilPortugues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBoundedContextBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NilPortugues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBoundedContextBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NilPortugues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBoundedContextBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="ViewPostCommand&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php&#10;DependencyInjection.&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/vendor/symfony/monolog-bundle/Tests/DependencyInjection/DependencyInjectionTest.php&#10;Dependency&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/vendor/swiftmailer/swiftmailer/lib/classes/Swift/DependencyContainer.php&#10;NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommand&#9;null&#9;null&#10;PostRepository&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/src/NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php" />
+    <property name="SearchEverywhereHistoryKey" value="ContainerBuilder&#9;null&#9;null&#10;ViewPostCommand&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php&#10;DependencyInjection.&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/vendor/symfony/monolog-bundle/Tests/DependencyInjection/DependencyInjectionTest.php&#10;Dependency&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/vendor/swiftmailer/swiftmailer/lib/classes/Swift/DependencyContainer.php&#10;NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommand&#9;null&#9;null&#10;PostRepository&#9;FILE&#9;file:///private/var/www/personal/ddd-decoupled-symfony2/src/NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php" />
     <property name="options.lastSelected" value="Symfony2.SettingsForm" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -258,6 +452,10 @@
       <TestRunner />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -266,10 +464,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
       <method />
     </configuration>
@@ -286,6 +480,9 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -293,9 +490,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -314,30 +508,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48022598" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4786184" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21888413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22213247" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -361,35 +555,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1320">
-          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30805135" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3418903" vertical-offset="1049" max-vertical-offset="45496">
@@ -520,9 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5762195" vertical-offset="598" max-vertical-offset="1254">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#318#380#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="1672">
           <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,9 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77134144" vertical-offset="0" max-vertical-offset="1298">
           <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="e#331#401#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,9 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5030488" vertical-offset="0" max-vertical-offset="1342">
           <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="e#327#419#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
           <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
           <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -651,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35279804" vertical-offset="14925" max-vertical-offset="23518">
           <caret line="685" column="9" selection-start-line="685" selection-start-column="9" selection-end-line="685" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,23 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16176471" vertical-offset="0" max-vertical-offset="680">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/DependencyContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8184">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/monolog-bundle/Tests/DependencyInjection/DependencyInjectionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.083333" vertical-offset="242" max-vertical-offset="968">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,10 +837,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml">
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.097058825" vertical-offset="0" max-vertical-offset="680">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="836">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6395349" vertical-offset="0" max-vertical-offset="25828">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.666667" vertical-offset="66" max-vertical-offset="748">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <marker date="1429608589000" expanded="true" signature="75:290" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/BaseCommandBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="198" max-vertical-offset="1386">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -719,34 +879,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4166665" vertical-offset="180" max-vertical-offset="836">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.875" vertical-offset="753" max-vertical-offset="3410">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Exception/ServiceNotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.083333" vertical-offset="0" max-vertical-offset="1210">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Exception/InvalidArgumentException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.083333" vertical-offset="0" max-vertical-offset="440">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0" vertical-offset="550" max-vertical-offset="1232">
-          <caret line="44" column="65" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/BaseCommandBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0" vertical-offset="752" max-vertical-offset="1386">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        <state vertical-scroll-proportion="-10.333333" vertical-offset="654" max-vertical-offset="1210">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="53" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3628049" vertical-offset="598" max-vertical-offset="1298">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+        <state vertical-scroll-proportion="-7.5833335" vertical-offset="654" max-vertical-offset="1320">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16666667" vertical-offset="0" max-vertical-offset="440">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
         </state>
       </provider>

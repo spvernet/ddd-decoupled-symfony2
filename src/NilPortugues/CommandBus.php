@@ -20,14 +20,14 @@ class CommandBus extends BaseCommandBus
 {
     /**
      * @param                     $container
-     * @param array               $handlers
+     * @param array $handlers
      * @param CommandBusInterface $next
      */
     public function __construct($container, array $handlers, CommandBusInterface $next = null)
     {
-        $this->service  = $container;
+        $this->service = $container;
         $this->handlers = $handlers;
-        $this->next     = $next;
+        $this->next = $next;
     }
 
     /**
@@ -41,11 +41,10 @@ class CommandBus extends BaseCommandBus
         $response = null;
         $commandClass = get_class($command);
         $this->commandMappedToCommandHandlerGuard($commandClass);
-
         $commandClassKey = str_replace('\\', '_', $commandClass);
-        $commandHandler = $this->service->get($this->handlers[$commandClassKey]);
 
         try {
+            $commandHandler = $this->service->get($this->handlers[$commandClassKey], true);
             return $commandHandler->handle($command);
         } catch (\Exception $e) {
             $this->errors[] = $e->getMessage();

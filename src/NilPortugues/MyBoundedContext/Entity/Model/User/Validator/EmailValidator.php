@@ -44,7 +44,7 @@ class EmailValidator
     public function isValid($email)
     {
         $stringValidator = $this->validator->isString('email')->isEmail();
-        $isValid         = $stringValidator->validate($email);
+        $isValid = $stringValidator->validate($email);
 
         if (false === $isValid) {
             $this->errors = $stringValidator->getErrors();

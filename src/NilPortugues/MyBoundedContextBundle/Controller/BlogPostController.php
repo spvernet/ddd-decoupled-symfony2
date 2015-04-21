@@ -34,7 +34,7 @@ class BlogPostController extends Controller
 
         try {
             $response = $commandBus->handle(new ViewPostCommand($request->get('id')));
-            return $this->render(self::TWIG_VIEW_POST, ['post' =>  $response]);
+            return $this->render(self::TWIG_VIEW_POST, ['post' => $response]);
         } catch (\Exception $e) {
             return $this
                 ->render(self::TWIG_VIEW_POST, ['error_msg' => $commandBus->getErrors()])

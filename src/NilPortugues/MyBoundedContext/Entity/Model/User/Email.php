@@ -34,11 +34,18 @@ class Email
     }
 
     /**
-     * @return string
+     * @param $email
+     *
+     * @throws InvalidArgumentException
      */
-    public function get()
+    private function validate($email)
     {
-        return $this->email;
+        $validator = new EmailValidator();
+
+        if (false === $validator->isValid($email)) {
+            $errors = $validator->getErrors();
+            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
+        }
     }
 
     /**
@@ -60,17 +67,10 @@ class Email
     }
 
     /**
-     * @param $email
-     *
-     * @throws InvalidArgumentException
+     * @return string
      */
-    private function validate($email)
+    public function get()
     {
-        $validator = new EmailValidator();
-
-        if (false === $validator->isValid($email)) {
-            $errors = $validator->getErrors();
-            throw new InvalidArgumentException(implode(' ', array_pop($errors)));
-        }
+        return $this->email;
     }
 }

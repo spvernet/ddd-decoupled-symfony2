@@ -10,8 +10,8 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
-use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\EmailValidator;
+use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
 
 /**
  * Class SignUpUserCommand

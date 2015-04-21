@@ -10,10 +10,10 @@
 
 namespace NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\Blog\Post;
 
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Repository\PostRepositoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Post;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\PostId;
 use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Repository\PostNotFoundException;
+use NilPortugues\MyBoundedContext\Entity\Model\Blog\Post\Repository\PostRepositoryInterface;
 use NilPortugues\MyBoundedContext\Infrastructure\Factory\Blog\Post\PostFactory;
 
 /**

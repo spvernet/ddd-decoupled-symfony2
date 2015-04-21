@@ -26,7 +26,7 @@ class ViewPostCommand
      */
     public function __construct($postId)
     {
-        $this->postId = (string) $postId;
+        $this->postId = (string)$postId;
     }
 
     /**

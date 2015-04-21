@@ -47,11 +47,11 @@ class ViewPostResponse
      */
     public function __construct($postId, $authorId, $createdAt, $postTitle, $postBody)
     {
-        $this->postId = (string) $postId;
-        $this->authorId = (string) $authorId;
-        $this->createdAt = (string) $createdAt;
-        $this->postTitle = (string) $postTitle;
-        $this->postBody = (string) $postBody;
+        $this->postId = (string)$postId;
+        $this->authorId = (string)$authorId;
+        $this->createdAt = (string)$createdAt;
+        $this->postTitle = (string)$postTitle;
+        $this->postBody = (string)$postBody;
     }
 
     /**
