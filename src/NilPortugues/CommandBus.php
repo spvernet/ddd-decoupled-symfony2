@@ -19,13 +19,13 @@ use RuntimeException;
 class CommandBus extends BaseCommandBus
 {
     /**
-     * @param                     $container
+     * @param CommandHandlerResolver $resolver
      * @param array $handlers
      * @param CommandBusInterface $next
      */
-    public function __construct($container, array $handlers, CommandBusInterface $next = null)
+    public function __construct(CommandHandlerResolver $resolver, array $handlers, CommandBusInterface $next = null)
     {
-        $this->service = $container;
+        $this->resolver = $resolver;
         $this->handlers = $handlers;
         $this->next = $next;
     }
@@ -40,11 +40,9 @@ class CommandBus extends BaseCommandBus
     {
         $response = null;
         $commandClass = get_class($command);
-        $this->commandMappedToCommandHandlerGuard($commandClass);
-        $commandClassKey = str_replace('\\', '_', $commandClass);
 
         try {
-            $commandHandler = $this->service->get($this->handlers[$commandClassKey], true);
+            $commandHandler = $this->resolver->get($this->handlers, $commandClass);
             return $commandHandler->handle($command);
         } catch (\Exception $e) {
             $this->errors[] = $e->getMessage();

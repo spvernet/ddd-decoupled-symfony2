@@ -1,13 +1,18 @@
 services:
+    command_handler_strategy:
+      class : NilPortugues\SymfonyCommandHandlerResolver
+      arguments:
+        - @service_container
+
     command_bus:
         class: NilPortugues\CommandBus
         arguments:
-         - @service_container
+         - @command_handler_strategy
          - %command_bus_map%
 
     validation_bus:
         class: NilPortugues\CommandValidationBus
         arguments:
-         - @service_container
+         - @command_handler_strategy
          - %validation_bus_map%
          - @command_bus

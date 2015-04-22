@@ -29,9 +29,9 @@ abstract class BaseCommandBus implements CommandBusInterface
     protected $next;
 
     /**
-     * @var object|array
+     * @var CommandHandlerResolver
      */
-    protected $service;
+    protected $resolver;
 
     /**
      * @var array
@@ -45,20 +45,5 @@ abstract class BaseCommandBus implements CommandBusInterface
     public function getErrors()
     {
         return array_merge($this->errors, (null !== $this->next) ? $this->next->getErrors() : []);
-    }
-
-    /**
-     * @param string $commandClass
-     *
-     * @throws \RuntimeException
-     */
-    protected function commandMappedToCommandHandlerGuard($commandClass)
-    {
-        $commandClassKey = str_replace('\\', '_', $commandClass);
-        if (false === array_key_exists($commandClassKey, $this->handlers)) {
-            throw new RuntimeException(
-                sprintf('%s has no Command Handler assigned in %s.', $commandClass, get_class($this))
-            );
-        }
     }
 }
