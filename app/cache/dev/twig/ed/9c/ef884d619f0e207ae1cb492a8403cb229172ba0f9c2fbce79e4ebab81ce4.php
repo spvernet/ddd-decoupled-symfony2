@@ -33,64 +33,64 @@ class __TwigTemplate_ed9cef884d619f0e207ae1cb492a8403cb229172ba0f9c2fbce79e4ebab
         // line 5
         if (array_key_exists("user", $context)) {
             // line 6
-            echo "    <h1>User profile</h1>
-    <ul>
-        <li><strong>User Id:</strong> ";
+            echo "        <h1>User profile</h1>
+        <ul>
+            <li><strong>User Id:</strong> ";
             // line 8
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "email", array()), "html", null, true);
             echo "</li>
-        <li><strong>Username:</strong> ";
+            <li><strong>Username:</strong> ";
             // line 9
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
             echo "</li>
-        <li><strong>Email:</strong> ";
+            <li><strong>Email:</strong> ";
             // line 10
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "email", array()), "html", null, true);
             echo "</li>
-        <li><strong>Registered on:</strong> ";
+            <li><strong>Registered on:</strong> ";
             // line 11
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "registeredOn", array()), "html", null, true);
             echo "</li>
-    </ul>
+        </ul>
     ";
         } else {
             // line 14
             echo "        <h1>Error!</h1>
         <p>The following errors occurred:</p>
         <ul>
-        ";
+            ";
             // line 17
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["error_msg"]) ? $context["error_msg"] : $this->getContext($context, "error_msg")));
             foreach ($context['_seq'] as $context["_key"] => $context["errorMessage"]) {
                 // line 18
-                echo "            ";
+                echo "                ";
                 if (twig_test_iterable($context["errorMessage"])) {
                     // line 19
-                    echo "                ";
+                    echo "                    ";
                     $context['_parent'] = (array) $context;
                     $context['_seq'] = twig_ensure_traversable($context["errorMessage"]);
                     foreach ($context['_seq'] as $context["_key"] => $context["subErrorMessage"]) {
                         // line 20
-                        echo "                    <li>";
+                        echo "                        <li>";
                         echo twig_escape_filter($this->env, $context["subErrorMessage"], "html", null, true);
                         echo "</li>
-                ";
+                    ";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['subErrorMessage'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
                     // line 22
-                    echo "            ";
+                    echo "                ";
                 } else {
                     // line 23
-                    echo "                <li>";
+                    echo "                    <li>";
                     echo twig_escape_filter($this->env, $context["errorMessage"], "html", null, true);
                     echo "</li>
-            ";
+                ";
                 }
                 // line 25
-                echo "        ";
+                echo "            ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['errorMessage'], $context['_parent'], $context['loop']);

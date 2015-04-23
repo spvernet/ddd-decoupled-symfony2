@@ -2630,8 +2630,11 @@
       <argument type="service" id="nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog.post.post_repository"/>
     </service>
     <service id="nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_validator" class="NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommandValidator"/>
-    <service id="command_bus" class="NilPortugues\CommandBus">
+    <service id="command_handler_strategy" class="NilPortugues\SymfonyCommandHandlerResolver">
       <argument type="service" id="service_container"/>
+    </service>
+    <service id="command_bus" class="NilPortugues\CommandBus">
+      <argument type="service" id="command_handler_strategy"/>
       <argument type="collection">
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand">nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler</argument>
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand">nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_handler</argument>
@@ -2639,7 +2642,7 @@
       </argument>
     </service>
     <service id="validation_bus" class="NilPortugues\CommandValidationBus">
-      <argument type="service" id="service_container"/>
+      <argument type="service" id="command_handler_strategy"/>
       <argument type="collection">
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand">nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator</argument>
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand">nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_validator</argument>

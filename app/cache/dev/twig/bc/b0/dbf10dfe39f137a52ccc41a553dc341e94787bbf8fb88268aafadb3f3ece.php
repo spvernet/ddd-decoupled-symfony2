@@ -33,29 +33,29 @@ class __TwigTemplate_bcb0dbf10dfe39f137a52ccc41a553dc341e94787bbf8fb88268aafadb3
         // line 5
         if (array_key_exists("post", $context)) {
             // line 6
-            echo "    <h1>Blog post</h1>
-    <ul>
-        <li><strong>Post Id:</strong> ";
+            echo "        <h1>Blog post</h1>
+        <ul>
+            <li><strong>Post Id:</strong> ";
             // line 8
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "postId", array()), "html", null, true);
             echo "</li>
-        <li><strong>Author Id:</strong> ";
+            <li><strong>Author Id:</strong> ";
             // line 9
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "authorId", array()), "html", null, true);
             echo "</li>
-        <li><strong>Created at:</strong> ";
+            <li><strong>Created at:</strong> ";
             // line 10
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "createdAt", array()), "html", null, true);
             echo "</li>
-        <li><strong>Title:</strong> ";
+            <li><strong>Title:</strong> ";
             // line 11
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "postTitle", array()), "html", null, true);
             echo "</li>
-        <li><strong>Body:</strong> ";
+            <li><strong>Body:</strong> ";
             // line 12
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "postBody", array()), "html", null, true);
             echo "</li>
-    </ul>
+        </ul>
     ";
         } else {
             // line 15

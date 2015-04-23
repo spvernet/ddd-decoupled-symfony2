@@ -17,9 +17,9 @@ class SymfonyCommandHandlerResolver implements CommandHandlerResolver
     protected $service;
 
     /**
-     * @param $service
+     * @param ContainerInterface $service
      */
-    public function __construct($service)
+    public function __construct(ContainerInterface $service)
     {
         $this->service = $service;
     }

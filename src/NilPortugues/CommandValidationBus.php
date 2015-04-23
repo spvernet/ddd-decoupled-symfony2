@@ -38,7 +38,6 @@ class CommandValidationBus extends BaseCommandBus
      */
     public function handle($command)
     {
-        $response = null;
         $commandClass = get_class($command);
 
         try {

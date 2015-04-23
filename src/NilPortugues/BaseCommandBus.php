@@ -10,8 +10,6 @@
 
 namespace NilPortugues;
 
-use RuntimeException;
-
 /**
  * Class BaseCommandBus
  * @package NilPortugues
@@ -37,7 +35,6 @@ abstract class BaseCommandBus implements CommandBusInterface
      * @var array
      */
     protected $errors = [];
-
 
     /**
      * @return array
