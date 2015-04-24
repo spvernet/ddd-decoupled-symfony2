@@ -41,9 +41,8 @@ class CommandValidationBus extends BaseCommandBus
      */
     public function handle($command)
     {
-        $commandClass = get_class($command);
-
         try {
+            $commandClass = get_class($command);
             $commandHandler = $this->resolver->get($this->handlers, $commandClass);
 
             if (true !== $commandHandler->handle($command)) {
@@ -52,6 +51,7 @@ class CommandValidationBus extends BaseCommandBus
                     sprintf('Error occurred in the %s when handling: %s', __CLASS__, $commandClass)
                 );
             }
+
             return $this->next->handle($command);
         } catch (\Exception $e) {
             throw new RuntimeException($e->getMessage());

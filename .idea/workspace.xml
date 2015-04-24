@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109610e0-56ff-41ba-99be-385af6ae3415" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NilPortugues/BaseCommandBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/BaseCommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandBusInterface.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandHandlerResolver.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandHandlerResolver.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandValidationBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/SymfonyCommandHandlerResolver.php" afterPath="$PROJECT_DIR$/src/NilPortugues/SymfonyCommandHandlerResolver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/SymfonyCommandHandlerResolverTest.php" afterPath="$PROJECT_DIR$/tests/SymfonyCommandHandlerResolverTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml" afterPath="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php" afterPath="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ddd-decoupled-symfony2.iws" />
@@ -43,8 +31,8 @@
       <file leaf-file-name="CommandBus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="17.916666" vertical-offset="672" max-vertical-offset="1232">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state vertical-scroll-proportion="-19.25" vertical-offset="330" max-vertical-offset="1232">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="e#275#330#0#PHP" expanded="true" />
               </folding>
@@ -52,21 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandBus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.833333" vertical-offset="0" max-vertical-offset="660">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandValidationBus.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommandValidationBus.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1298">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.7444574" vertical-offset="352" max-vertical-offset="1298">
+              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
               <folding>
                 <element signature="e#275#330#0#PHP" expanded="true" />
               </folding>
@@ -74,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SymfonyCommandHandlerResolver.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SymfonyCommandHandlerResolver.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NilPortugues/SymfonyCommandHandlerResolver.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67535543" vertical-offset="683" max-vertical-offset="1540">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state vertical-scroll-proportion="-43.083332" vertical-offset="0" max-vertical-offset="1540">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="e#32#95#0#PHP" expanded="true" />
               </folding>
@@ -103,26 +81,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-21.833334" vertical-offset="356" max-vertical-offset="1254">
               <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseCommandBus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/BaseCommandBus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="990">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandHandlerResolver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandHandlerResolver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="506">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -180,13 +138,13 @@
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandHandlerResolver.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBusInterface.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandHandlerResolver.php" />
-        <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/BaseCommandBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandBus.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/SymfonyCommandHandlerResolver.php" />
         <option value="$PROJECT_DIR$/tests/SymfonyCommandHandlerResolverTest.php" />
         <option value="$PROJECT_DIR$/src/NilPortugues/MyBoundedContextBundle/Resources/config/commands_buses.yml" />
+        <option value="$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php" />
       </list>
     </option>
   </component>
@@ -296,6 +254,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddd-decoupled-symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NilPortugues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommandBus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Abstraction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -388,10 +372,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-205" y="-1027" width="1680" height="1027" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47854784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,58 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.833334" vertical-offset="356" max-vertical-offset="1254">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.833333" vertical-offset="0" max-vertical-offset="660">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/BaseCommandBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="990">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandHandlerResolver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="506">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.916666" vertical-offset="672" max-vertical-offset="1232">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#275#330#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1298">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#275#330#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/SymfonyCommandHandlerResolverTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="27.541666" vertical-offset="793" max-vertical-offset="1650">
@@ -814,10 +746,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NilPortugues/SymfonyCommandHandlerResolver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67535543" vertical-offset="683" max-vertical-offset="1540">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state vertical-scroll-proportion="-43.083332" vertical-offset="0" max-vertical-offset="1540">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="e#32#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/BaseCommandBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20536757" vertical-offset="0" max-vertical-offset="990">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35939324" vertical-offset="0" max-vertical-offset="857">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/Abstraction/CommandHandlerResolver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23103851" vertical-offset="0" max-vertical-offset="857">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.833334" vertical-offset="356" max-vertical-offset="1254">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.25" vertical-offset="330" max-vertical-offset="1232">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#275#330#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NilPortugues/CommandBus/CommandValidationBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7444574" vertical-offset="352" max-vertical-offset="1298">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="e#275#330#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
