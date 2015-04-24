@@ -5,13 +5,13 @@ services:
         - @service_container
 
     command_bus:
-        class: NilPortugues\CommandBus
+        class: NilPortugues\CommandBus\CommandBus
         arguments:
          - @command_handler_strategy
          - %command_bus_map%
 
     validation_bus:
-        class: NilPortugues\CommandValidationBus
+        class: NilPortugues\CommandBus\CommandValidationBus
         arguments:
          - @command_handler_strategy
          - %validation_bus_map%

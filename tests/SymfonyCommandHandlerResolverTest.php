@@ -5,7 +5,6 @@ namespace NilPortugues\Test;
 use NilPortugues\SymfonyCommandHandlerResolver;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-
 /**
  * Class SymfonyCommandHandlerResolverTest
  * @package NilPortugues\Test
@@ -57,5 +56,14 @@ class SymfonyCommandHandlerResolverTest extends \PHPUnit_Framework_TestCase
     {
         $commandHandler = $this->resolver->get($this->handlers, 'dummyCommand');
         $this->assertInstanceOf('stdClass', $commandHandler);
+    }
+
+    /**
+     *
+     */
+    public function testItThrowsRuntimeExceptionWhenCommandHandlerNotMapped()
+    {
+        $this->setExpectedException('RuntimeException');
+        $this->resolver->get($this->handlers, 'undefinedCommand');
     }
 }

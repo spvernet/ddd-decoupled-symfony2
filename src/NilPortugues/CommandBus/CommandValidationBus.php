@@ -8,8 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues;
+namespace NilPortugues\CommandBus;
 
+use NilPortugues\CommandBus\Abstraction\BaseCommandBus;
+use NilPortugues\CommandBus\Abstraction\CommandBus;
+use NilPortugues\CommandBus\Abstraction\CommandHandlerResolver;
 use RuntimeException;
 
 /**
@@ -21,9 +24,9 @@ class CommandValidationBus extends BaseCommandBus
     /**
      * @param CommandHandlerResolver $resolver
      * @param array $handlers
-     * @param CommandBusInterface $next
+     * @param CommandBus $next
      */
-    public function __construct(CommandHandlerResolver $resolver, array $handlers, CommandBusInterface $next)
+    public function __construct(CommandHandlerResolver $resolver, array $handlers, CommandBus $next)
     {
         $this->resolver = $resolver;
         $this->handlers = $handlers;

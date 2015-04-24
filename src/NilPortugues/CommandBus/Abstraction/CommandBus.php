@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues;
+namespace NilPortugues\CommandBus\Abstraction;
 
 /**
- * Class CommandBusInterface
+ * Class CommandBus
  * @package NilPortugues
  */
-interface CommandBusInterface
+interface CommandBus
 {
     /**
      * @param $command

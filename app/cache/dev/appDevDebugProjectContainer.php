@@ -420,11 +420,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-     * @return \NilPortugues\CommandBus A NilPortugues\CommandBus instance.
+     * @return \NilPortugues\CommandBus\CommandBus A NilPortugues\CommandBus\CommandBus instance.
      */
     protected function getCommandBusService()
     {
-        return $this->services['command_bus'] = new \NilPortugues\CommandBus($this->get('command_handler_strategy'), array('NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler', 'NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_handler', 'NilPortugues_MyBoundedContext_Application_Model_Blog_Post_ViewPost_ViewPostCommand' => 'nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler'));
+        return $this->services['command_bus'] = new \NilPortugues\CommandBus\CommandBus($this->get('command_handler_strategy'), array('NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler', 'NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_handler', 'NilPortugues_MyBoundedContext_Application_Model_Blog_Post_ViewPost_ViewPostCommand' => 'nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler'));
     }
 
     /**
@@ -3407,11 +3407,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-     * @return \NilPortugues\CommandValidationBus A NilPortugues\CommandValidationBus instance.
+     * @return \NilPortugues\CommandBus\CommandValidationBus A NilPortugues\CommandBus\CommandValidationBus instance.
      */
     protected function getValidationBusService()
     {
-        return $this->services['validation_bus'] = new \NilPortugues\CommandValidationBus($this->get('command_handler_strategy'), array('NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator', 'NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_validator', 'NilPortugues_MyBoundedContext_Application_Model_Blog_Post_ViewPost_ViewPostCommand' => 'nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_validator'), $this->get('command_bus'));
+        return $this->services['validation_bus'] = new \NilPortugues\CommandBus\CommandValidationBus($this->get('command_handler_strategy'), array('NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator', 'NilPortugues_MyBoundedContext_Application_Model_User_SignUp_SignUpUserCommand' => 'nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_validator', 'NilPortugues_MyBoundedContext_Application_Model_Blog_Post_ViewPost_ViewPostCommand' => 'nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_validator'), $this->get('command_bus'));
     }
 
     /**

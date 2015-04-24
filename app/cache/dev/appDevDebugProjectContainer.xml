@@ -2633,7 +2633,7 @@
     <service id="command_handler_strategy" class="NilPortugues\SymfonyCommandHandlerResolver">
       <argument type="service" id="service_container"/>
     </service>
-    <service id="command_bus" class="NilPortugues\CommandBus">
+    <service id="command_bus" class="NilPortugues\CommandBus\CommandBus">
       <argument type="service" id="command_handler_strategy"/>
       <argument type="collection">
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand">nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler</argument>
@@ -2641,7 +2641,7 @@
         <argument key="NilPortugues_MyBoundedContext_Application_Model_Blog_Post_ViewPost_ViewPostCommand">nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler</argument>
       </argument>
     </service>
-    <service id="validation_bus" class="NilPortugues\CommandValidationBus">
+    <service id="validation_bus" class="NilPortugues\CommandBus\CommandValidationBus">
       <argument type="service" id="command_handler_strategy"/>
       <argument type="collection">
         <argument key="NilPortugues_MyBoundedContext_Application_Model_User_View_ViewUserCommand">nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator</argument>

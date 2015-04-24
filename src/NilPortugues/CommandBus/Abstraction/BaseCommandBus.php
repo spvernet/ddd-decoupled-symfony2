@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues;
+namespace NilPortugues\CommandBus\Abstraction;
 
 /**
  * Class BaseCommandBus
- * @package NilPortugues
+ * @package NilPortugues\CommandBus
  */
-abstract class BaseCommandBus implements CommandBusInterface
+abstract class BaseCommandBus implements CommandBus
 {
     /**
      * @var array
@@ -22,7 +22,7 @@ abstract class BaseCommandBus implements CommandBusInterface
     protected $handlers = [];
 
     /**
-     * @var CommandBusInterface
+     * @var CommandBus
      */
     protected $next;
 

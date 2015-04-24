@@ -1,6 +1,6 @@
 <?php
 
-namespace NilPortugues;
+namespace NilPortugues\CommandBus\Abstraction;
 
 /**
  * Class CommandHandlerResolver

@@ -8,22 +8,25 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues;
+namespace NilPortugues\CommandBus;
 
+use NilPortugues\CommandBus\Abstraction\BaseCommandBus;
+use NilPortugues\CommandBus\Abstraction\CommandBus as AbstractCommandBus;
+use NilPortugues\CommandBus\Abstraction\CommandHandlerResolver;
 use RuntimeException;
 
 /**
  * Class CommandBus
- * @package NilPortugues
+ * @package NilPortugues\CommandBus
  */
 class CommandBus extends BaseCommandBus
 {
     /**
      * @param CommandHandlerResolver $resolver
      * @param array $handlers
-     * @param CommandBusInterface $next
+     * @param AbstractCommandBus $next
      */
-    public function __construct(CommandHandlerResolver $resolver, array $handlers, CommandBusInterface $next = null)
+    public function __construct(CommandHandlerResolver $resolver, array $handlers, AbstractCommandBus $next = null)
     {
         $this->resolver = $resolver;
         $this->handlers = $handlers;
