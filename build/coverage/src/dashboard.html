@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /private/var/www/personal/ddd-decoupled-symfony2/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/private/var/www/personal/ddd-decoupled-symfony2</a></li>
+        <li><a href="index.html">src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#20">UserName</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#19">EmailValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#19">UserIdValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#19">UserNameValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#21">UserId</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#19">User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#19">PostBodyValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#19">PostIdValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#19">PostTitleValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#20">Email</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php.html#23">CategoryFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php.html#25">PostFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#14">UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/DependencyInjection/Configuration.php.html#13">Configuration</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php.html#15">NilPortuguesMyBoundedContextExtension</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Tests/Controller/DefaultControllerTest.php.html#7">DefaultControllerTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/DefaultController.php.html#19">DefaultController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php.html#21">BlogPostController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/User/UserFactory.php.html#22">UserFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#23">CategoryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#23">PostRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#23">UserRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/BaseCommandBus.php.html#17">BaseCommandBus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#20">PostTitle</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php.html#17">SignUpUserCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandHandler.php.html#22">SignUpUserCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#20">SignUpUserCommandValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#17">SignUpUserResponse</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#17">ViewPostResponse</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#19">ViewPostCommandValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandBus.php.html#19">CommandBus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandValidationBus.php.html#19">CommandValidationBus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php.html#17">ViewPostCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php.html#23">ViewPostCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#21">PostId</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommand.php.html#17">ViewUserCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#19">CategoryIdValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#19">CategoryNameValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#20">Post</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#20">PostBody</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php.html#22">ViewUserCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#20">CategoryName</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#19">ViewUserCommandValidator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#21">CategoryId</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#17">ViewUserResponse</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#19">Category</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/SymfonyCommandHandlerResolver.php.html#12">SymfonyCommandHandlerResolver</a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#20">Post</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#21">PostId</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#19">User</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#21">UserId</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#21">CategoryId</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#20">PostBody</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#20">PostTitle</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#20">CategoryName</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#20">UserName</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#20">Email</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#20">SignUpUserCommandValidator</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#14">UserController</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#23">UserRepository</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#19">UserNameValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#19">UserIdValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#19">EmailValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#23">CategoryRepository</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#23">PostRepository</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#19">PostIdValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#19">PostTitleValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/CommandValidationBus.php.html#19">CommandValidationBus</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#19">ViewPostCommandValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#19">CategoryIdValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#19">ViewUserCommandValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#19">PostBodyValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#19">CategoryNameValidator</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php.html#22">ViewUserCommandHandler</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php.html#23">ViewPostCommandHandler</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/CommandBus.php.html#19">CommandBus</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php.html#21">BlogPostController</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php.html#23">CategoryFactory</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/BaseCommandBus.php.html#17">BaseCommandBus</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php.html#25">PostFactory</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/User/UserFactory.php.html#22">UserFactory</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/SymfonyCommandHandlerResolver.php.html#12">SymfonyCommandHandlerResolver</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#30"><abbr title="Email::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#41"><abbr title="Email::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#54"><abbr title="Email::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#64"><abbr title="PostTitleValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#44"><abbr title="PostTitleValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#44"><abbr title="PostIdValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#62"><abbr title="PostIdValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#34"><abbr title="PostTitleValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#64"><abbr title="Email::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#72"><abbr title="Email::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#85"><abbr title="User::setUsername">setUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#94"><abbr title="User::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#104"><abbr title="User::setEmail">setEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#75"><abbr title="User::getUsername">getUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#67"><abbr title="User::getUserId">getUserId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#47"><abbr title="User::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#59"><abbr title="User::getRegisteredOn">getRegisteredOn</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#34"><abbr title="PostIdValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#63"><abbr title="PostBodyValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#26"><abbr title="PostId::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#38"><abbr title="PostId::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#48"><abbr title="PostId::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#72"><abbr title="PostBody::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#64"><abbr title="PostBody::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#41"><abbr title="PostBody::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#54"><abbr title="PostBody::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#56"><abbr title="PostId::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#66"><abbr title="PostId::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#72"><abbr title="PostTitle::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#34"><abbr title="PostBodyValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#44"><abbr title="PostBodyValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#64"><abbr title="PostTitle::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#54"><abbr title="PostTitle::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#30"><abbr title="PostTitle::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#41"><abbr title="PostTitle::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#26"><abbr title="UserId::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#38"><abbr title="UserId::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#33"><abbr title="PostRepository::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#53"><abbr title="PostRepository::find">find</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#33"><abbr title="UserRepository::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#51"><abbr title="CategoryRepository::find">find</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#33"><abbr title="CategoryRepository::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php.html#36"><abbr title="PostFactory::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/User/UserFactory.php.html#32"><abbr title="UserFactory::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#47"><abbr title="UserRepository::find">find</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php.html#31"><abbr title="BlogPostController::viewPostAction">viewPostAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/DependencyInjection/Configuration.php.html#18"><abbr title="Configuration::getConfigTreeBuilder">getConfigTreeBuilder</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/DependencyInjection/NilPortuguesMyBoundedContextExtension.php.html#20"><abbr title="NilPortuguesMyBoundedContextExtension::load">load</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Tests/Controller/DefaultControllerTest.php.html#9"><abbr title="DefaultControllerTest::testIndex">testIndex</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#55"><abbr title="UserController::viewUserAction">viewUserAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#34"><abbr title="UserController::registerUserAction">registerUserAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/DefaultController.php.html#24"><abbr title="DefaultController::indexAction">indexAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#25"><abbr title="UserController::newUserAction">newUserAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php.html#31"><abbr title="CategoryFactory::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#64"><abbr title="UserNameValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#41"><abbr title="UserName::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#54"><abbr title="UserName::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#64"><abbr title="UserName::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#30"><abbr title="UserName::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#66"><abbr title="UserId::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#48"><abbr title="UserId::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#56"><abbr title="UserId::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#72"><abbr title="UserName::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#34"><abbr title="EmailValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#59"><abbr title="UserIdValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#34"><abbr title="UserNameValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#44"><abbr title="UserNameValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#44"><abbr title="UserIdValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#34"><abbr title="UserIdValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#44"><abbr title="EmailValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#59"><abbr title="EmailValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#30"><abbr title="PostBody::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#124"><abbr title="Post::setPostTitle">setPostTitle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#49"><abbr title="SignUpUserCommandValidator::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#64"><abbr title="SignUpUserCommandValidator::buildErrorArray">buildErrorArray</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#79"><abbr title="SignUpUserCommandValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#38"><abbr title="SignUpUserCommandValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandHandler.php.html#43"><abbr title="SignUpUserCommandHandler::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php.html#41"><abbr title="SignUpUserCommand::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php.html#49"><abbr title="SignUpUserCommand::getUsername">getUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandHandler.php.html#32"><abbr title="SignUpUserCommandHandler::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#42"><abbr title="SignUpUserResponse::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#53"><abbr title="SignUpUserResponse::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommand.php.html#35"><abbr title="ViewUserCommand::getUserId">getUserId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php.html#29"><abbr title="ViewUserCommandHandler::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php.html#40"><abbr title="ViewUserCommandHandler::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommand.php.html#27"><abbr title="ViewUserCommand::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#77"><abbr title="SignUpUserResponse::getRegisteredOn">getRegisteredOn</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#61"><abbr title="SignUpUserResponse::getUserId">getUserId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserResponse.php.html#69"><abbr title="SignUpUserResponse::getUsername">getUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommand.php.html#32"><abbr title="SignUpUserCommand::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#92"><abbr title="ViewPostResponse::getPostTitle">getPostTitle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php.html#27"><abbr title="ViewPostCommand::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommand.php.html#35"><abbr title="ViewPostCommand::getPostId">getPostId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php.html#30"><abbr title="ViewPostCommandHandler::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandValidationBus.php.html#39"><abbr title="CommandValidationBus::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandValidationBus.php.html#26"><abbr title="CommandValidationBus::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandBus.php.html#26"><abbr title="CommandBus::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/CommandBus.php.html#39"><abbr title="CommandBus::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php.html#41"><abbr title="ViewPostCommandHandler::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#34"><abbr title="ViewPostCommandValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#68"><abbr title="ViewPostResponse::getCreatedAt">getCreatedAt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#76"><abbr title="ViewPostResponse::getPostBody">getPostBody</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#84"><abbr title="ViewPostResponse::getPostId">getPostId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#60"><abbr title="ViewPostResponse::getAuthorId">getAuthorId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostResponse.php.html#48"><abbr title="ViewPostResponse::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#44"><abbr title="ViewPostCommandValidator::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#60"><abbr title="ViewPostCommandValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/BaseCommandBus.php.html#42"><abbr title="BaseCommandBus::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#34"><abbr title="ViewUserCommandValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#44"><abbr title="CategoryIdValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#62"><abbr title="CategoryIdValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#34"><abbr title="CategoryNameValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#34"><abbr title="CategoryIdValidator::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#72"><abbr title="CategoryName::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#54"><abbr title="CategoryName::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#64"><abbr title="CategoryName::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#44"><abbr title="CategoryNameValidator::isValid">isValid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#64"><abbr title="CategoryNameValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#97"><abbr title="Post::setPostBody">setPostBody</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#106"><abbr title="Post::getPostId">getPostId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#114"><abbr title="Post::getPostTitle">getPostTitle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#87"><abbr title="Post::getPostBody">getPostBody</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#79"><abbr title="Post::getCreatedAt">getCreatedAt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#54"><abbr title="Post::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#71"><abbr title="Post::getAuthorId">getAuthorId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#41"><abbr title="CategoryName::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#30"><abbr title="CategoryName::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#69"><abbr title="ViewUserResponse::getUsername">getUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#77"><abbr title="ViewUserResponse::getRegisteredOn">getRegisteredOn</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#41"><abbr title="Category::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#61"><abbr title="ViewUserResponse::getUserId">getUserId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#53"><abbr title="ViewUserResponse::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#60"><abbr title="ViewUserCommandValidator::getErrors">getErrors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserResponse.php.html#42"><abbr title="ViewUserResponse::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#51"><abbr title="Category::getCategoryId">getCategoryId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#59"><abbr title="Category::getCreatedAt">getCreatedAt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#48"><abbr title="CategoryId::equals">equals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#56"><abbr title="CategoryId::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#66"><abbr title="CategoryId::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#44"><abbr title="ViewUserCommandValidator::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#38"><abbr title="CategoryId::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#67"><abbr title="Category::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Category.php.html#77"><abbr title="Category::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#26"><abbr title="CategoryId::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NilPortugues/SymfonyCommandHandlerResolver.php.html#46"><abbr title="SymfonyCommandHandlerResolver::commandMappedToCommandHandlerGuard">commandMappedToCommandHandlerGuard</a></a></td><td class="text-right">50%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#26"><abbr title="CategoryId::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/CommandValidationBus.php.html#39"><abbr title="CommandValidationBus::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#26"><abbr title="UserId::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#26"><abbr title="PostId::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Post/PostFactory.php.html#36"><abbr title="PostFactory::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserNameValidator.php.html#44"><abbr title="UserNameValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/Blog/Category/CategoryFactory.php.html#31"><abbr title="CategoryFactory::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/EmailValidator.php.html#44"><abbr title="EmailValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserId.php.html#66"><abbr title="UserId::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/UserName.php.html#41"><abbr title="UserName::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Factory/User/UserFactory.php.html#32"><abbr title="UserFactory::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Validator/UserIdValidator.php.html#44"><abbr title="UserIdValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#51"><abbr title="CategoryRepository::find">find</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/BlogPostController.php.html#31"><abbr title="BlogPostController::viewPostAction">viewPostAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#34"><abbr title="UserController::registerUserAction">registerUserAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContextBundle/Controller/UserController.php.html#55"><abbr title="UserController::viewUserAction">viewUserAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#47"><abbr title="UserRepository::find">find</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/User/UserRepository.php.html#33"><abbr title="UserRepository::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/User.php.html#47"><abbr title="User::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#33"><abbr title="PostRepository::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Post/PostRepository.php.html#53"><abbr title="PostRepository::find">find</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Infrastructure/Persistence/InMemory/Blog/Category/CategoryRepository.php.html#33"><abbr title="CategoryRepository::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostTitleValidator.php.html#44"><abbr title="PostTitleValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandValidator.php.html#44"><abbr title="ViewUserCommandValidator::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryId.php.html#66"><abbr title="CategoryId::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/CategoryName.php.html#41"><abbr title="CategoryName::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/View/ViewUserCommandHandler.php.html#40"><abbr title="ViewUserCommandHandler::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/User/SignUp/SignUpUserCommandValidator.php.html#64"><abbr title="SignUpUserCommandValidator::buildErrorArray">buildErrorArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/CommandBus.php.html#39"><abbr title="CommandBus::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandHandler.php.html#41"><abbr title="ViewPostCommandHandler::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Application/Model/Blog/Post/ViewPost/ViewPostCommandValidator.php.html#44"><abbr title="ViewPostCommandValidator::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/User/Email.php.html#41"><abbr title="Email::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryIdValidator.php.html#44"><abbr title="CategoryIdValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostBodyValidator.php.html#44"><abbr title="PostBodyValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Validator/PostIdValidator.php.html#44"><abbr title="PostIdValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/BaseCommandBus.php.html#42"><abbr title="BaseCommandBus::getErrors">getErrors</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Category/Validator/CategoryNameValidator.php.html#44"><abbr title="CategoryNameValidator::isValid">isValid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostTitle.php.html#41"><abbr title="PostTitle::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/Post.php.html#54"><abbr title="Post::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostBody.php.html#41"><abbr title="PostBody::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/MyBoundedContext/Entity/Model/Blog/Post/PostId.php.html#66"><abbr title="PostId::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NilPortugues/SymfonyCommandHandlerResolver.php.html#46"><abbr title="SymfonyCommandHandlerResolver::commandMappedToCommandHandlerGuard">commandMappedToCommandHandlerGuard</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.16</a> using <a href="http://php.net/" target="_top">PHP 5.6.7</a> and <a href="http://phpunit.de/">PHPUnit 4.6.4</a> at Fri Apr 24 9:59:09 CEST 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([46,0,0,0,0,0,0,0,1,0,0,4], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([145,0,0,0,0,0,1,0,0,0,0,3], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"NilPortugues\/BaseCommandBus.php.html#17\">BaseCommandBus<\/a>"],[0,3,"<a href=\"NilPortugues\/CommandBus.php.html#19\">CommandBus<\/a>"],[0,4,"<a href=\"NilPortugues\/CommandValidationBus.php.html#19\">CommandValidationBus<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommand.php.html#17\">ViewPostCommand<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandHandler.php.html#23\">ViewPostCommandHandler<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandValidator.php.html#19\">ViewPostCommandValidator<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#17\">ViewPostResponse<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommand.php.html#17\">SignUpUserCommand<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandHandler.php.html#22\">SignUpUserCommandHandler<\/a>"],[0,5,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandValidator.php.html#20\">SignUpUserCommandValidator<\/a>"],[0,5,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#17\">SignUpUserResponse<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommand.php.html#17\">ViewUserCommand<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandHandler.php.html#22\">ViewUserCommandHandler<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandValidator.php.html#19\">ViewUserCommandValidator<\/a>"],[0,5,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#17\">ViewUserResponse<\/a>"],[0,5,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#19\">Category<\/a>"],[0,8,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#21\">CategoryId<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#20\">CategoryName<\/a>"],[100,0,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Repository\/CategoryNotFoundException.php.html#17\">CategoryNotFoundException<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryIdValidator.php.html#19\">CategoryIdValidator<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryNameValidator.php.html#19\">CategoryNameValidator<\/a>"],[0,9,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#20\">Post<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#20\">PostBody<\/a>"],[0,8,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#21\">PostId<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#20\">PostTitle<\/a>"],[100,0,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Repository\/PostNotFoundException.php.html#17\">PostNotFoundException<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostBodyValidator.php.html#19\">PostBodyValidator<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostIdValidator.php.html#19\">PostIdValidator<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostTitleValidator.php.html#19\">PostTitleValidator<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#20\">Email<\/a>"],[100,0,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Repository\/UserNotFoundException.php.html#17\">UserNotFoundException<\/a>"],[0,8,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#19\">User<\/a>"],[0,8,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#21\">UserId<\/a>"],[0,6,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#20\">UserName<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/EmailValidator.php.html#19\">EmailValidator<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserIdValidator.php.html#19\">UserIdValidator<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserNameValidator.php.html#19\">UserNameValidator<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/Blog\/Category\/CategoryFactory.php.html#23\">CategoryFactory<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/Blog\/Post\/PostFactory.php.html#25\">PostFactory<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/User\/UserFactory.php.html#22\">UserFactory<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Category\/CategoryRepository.php.html#23\">CategoryRepository<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Post\/PostRepository.php.html#23\">PostRepository<\/a>"],[0,4,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/User\/UserRepository.php.html#23\">UserRepository<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/BlogPostController.php.html#21\">BlogPostController<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/DefaultController.php.html#19\">DefaultController<\/a>"],[0,5,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/UserController.php.html#14\">UserController<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/DependencyInjection\/Configuration.php.html#13\">Configuration<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/DependencyInjection\/NilPortuguesMyBoundedContextExtension.php.html#15\">NilPortuguesMyBoundedContextExtension<\/a>"],[100,0,"<a href=\"NilPortugues\/MyBoundedContextBundle\/NilPortuguesMyBoundedContextBundle.php.html#7\">NilPortuguesMyBoundedContextBundle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Tests\/Controller\/DefaultControllerTest.php.html#7\">DefaultControllerTest<\/a>"],[75,5,"<a href=\"NilPortugues\/SymfonyCommandHandlerResolver.php.html#12\">SymfonyCommandHandlerResolver<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"NilPortugues\/BaseCommandBus.php.html#42\">BaseCommandBus::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/CommandBus.php.html#26\">CommandBus::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/CommandBus.php.html#39\">CommandBus::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/CommandValidationBus.php.html#26\">CommandValidationBus::__construct<\/a>"],[0,3,"<a href=\"NilPortugues\/CommandValidationBus.php.html#39\">CommandValidationBus::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommand.php.html#27\">ViewPostCommand::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommand.php.html#35\">ViewPostCommand::getPostId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandHandler.php.html#30\">ViewPostCommandHandler::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandHandler.php.html#41\">ViewPostCommandHandler::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandValidator.php.html#34\">ViewPostCommandValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandValidator.php.html#44\">ViewPostCommandValidator::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostCommandValidator.php.html#60\">ViewPostCommandValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#48\">ViewPostResponse::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#60\">ViewPostResponse::getAuthorId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#68\">ViewPostResponse::getCreatedAt<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#76\">ViewPostResponse::getPostBody<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#84\">ViewPostResponse::getPostId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/Blog\/Post\/ViewPost\/ViewPostResponse.php.html#92\">ViewPostResponse::getPostTitle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommand.php.html#32\">SignUpUserCommand::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommand.php.html#41\">SignUpUserCommand::getEmail<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommand.php.html#49\">SignUpUserCommand::getUsername<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandHandler.php.html#32\">SignUpUserCommandHandler::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandHandler.php.html#43\">SignUpUserCommandHandler::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandValidator.php.html#38\">SignUpUserCommandValidator::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandValidator.php.html#49\">SignUpUserCommandValidator::handle<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandValidator.php.html#64\">SignUpUserCommandValidator::buildErrorArray<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserCommandValidator.php.html#79\">SignUpUserCommandValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#42\">SignUpUserResponse::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#53\">SignUpUserResponse::getEmail<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#61\">SignUpUserResponse::getUserId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#69\">SignUpUserResponse::getUsername<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/SignUp\/SignUpUserResponse.php.html#77\">SignUpUserResponse::getRegisteredOn<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommand.php.html#27\">ViewUserCommand::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommand.php.html#35\">ViewUserCommand::getUserId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandHandler.php.html#29\">ViewUserCommandHandler::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandHandler.php.html#40\">ViewUserCommandHandler::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandValidator.php.html#34\">ViewUserCommandValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandValidator.php.html#44\">ViewUserCommandValidator::handle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserCommandValidator.php.html#60\">ViewUserCommandValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#42\">ViewUserResponse::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#53\">ViewUserResponse::getEmail<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#61\">ViewUserResponse::getUserId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#69\">ViewUserResponse::getUsername<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Application\/Model\/User\/View\/ViewUserResponse.php.html#77\">ViewUserResponse::getRegisteredOn<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#41\">Category::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#51\">Category::getCategoryId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#59\">Category::getCreatedAt<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#67\">Category::getName<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Category.php.html#77\">Category::setName<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#26\">CategoryId::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#38\">CategoryId::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#48\">CategoryId::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#56\">CategoryId::get<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryId.php.html#66\">CategoryId::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#30\">CategoryName::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#41\">CategoryName::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#54\">CategoryName::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#64\">CategoryName::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/CategoryName.php.html#72\">CategoryName::get<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryIdValidator.php.html#34\">CategoryIdValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryIdValidator.php.html#44\">CategoryIdValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryIdValidator.php.html#62\">CategoryIdValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryNameValidator.php.html#34\">CategoryNameValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryNameValidator.php.html#44\">CategoryNameValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Category\/Validator\/CategoryNameValidator.php.html#64\">CategoryNameValidator::getErrors<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#54\">Post::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#71\">Post::getAuthorId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#79\">Post::getCreatedAt<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#87\">Post::getPostBody<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#97\">Post::setPostBody<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#106\">Post::getPostId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#114\">Post::getPostTitle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Post.php.html#124\">Post::setPostTitle<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#30\">PostBody::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#41\">PostBody::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#54\">PostBody::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#64\">PostBody::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostBody.php.html#72\">PostBody::get<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#26\">PostId::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#38\">PostId::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#48\">PostId::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#56\">PostId::get<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostId.php.html#66\">PostId::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#30\">PostTitle::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#41\">PostTitle::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#54\">PostTitle::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#64\">PostTitle::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/PostTitle.php.html#72\">PostTitle::get<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostBodyValidator.php.html#34\">PostBodyValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostBodyValidator.php.html#44\">PostBodyValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostBodyValidator.php.html#63\">PostBodyValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostIdValidator.php.html#34\">PostIdValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostIdValidator.php.html#44\">PostIdValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostIdValidator.php.html#62\">PostIdValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostTitleValidator.php.html#34\">PostTitleValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostTitleValidator.php.html#44\">PostTitleValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/Blog\/Post\/Validator\/PostTitleValidator.php.html#64\">PostTitleValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#30\">Email::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#41\">Email::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#54\">Email::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#64\">Email::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Email.php.html#72\">Email::get<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#47\">User::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#59\">User::getRegisteredOn<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#67\">User::getUserId<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#75\">User::getUsername<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#85\">User::setUsername<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#94\">User::getEmail<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/User.php.html#104\">User::setEmail<\/a>"],[0,3,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#26\">UserId::__construct<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#38\">UserId::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#48\">UserId::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#56\">UserId::get<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserId.php.html#66\">UserId::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#30\">UserName::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#41\">UserName::validate<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#54\">UserName::__toString<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#64\">UserName::equals<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/UserName.php.html#72\">UserName::get<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/EmailValidator.php.html#34\">EmailValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/EmailValidator.php.html#44\">EmailValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/EmailValidator.php.html#59\">EmailValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserIdValidator.php.html#34\">UserIdValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserIdValidator.php.html#44\">UserIdValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserIdValidator.php.html#59\">UserIdValidator::getErrors<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserNameValidator.php.html#34\">UserNameValidator::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserNameValidator.php.html#44\">UserNameValidator::isValid<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContext\/Entity\/Model\/User\/Validator\/UserNameValidator.php.html#64\">UserNameValidator::getErrors<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/Blog\/Category\/CategoryFactory.php.html#31\">CategoryFactory::create<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/Blog\/Post\/PostFactory.php.html#36\">PostFactory::create<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Factory\/User\/UserFactory.php.html#32\">UserFactory::create<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Category\/CategoryRepository.php.html#33\">CategoryRepository::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Category\/CategoryRepository.php.html#51\">CategoryRepository::find<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Post\/PostRepository.php.html#33\">PostRepository::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/Blog\/Post\/PostRepository.php.html#53\">PostRepository::find<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/User\/UserRepository.php.html#33\">UserRepository::__construct<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContext\/Infrastructure\/Persistence\/InMemory\/User\/UserRepository.php.html#47\">UserRepository::find<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/BlogPostController.php.html#31\">BlogPostController::viewPostAction<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/DefaultController.php.html#24\">DefaultController::indexAction<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/UserController.php.html#25\">UserController::newUserAction<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/UserController.php.html#34\">UserController::registerUserAction<\/a>"],[0,2,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Controller\/UserController.php.html#55\">UserController::viewUserAction<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/DependencyInjection\/Configuration.php.html#18\">Configuration::getConfigTreeBuilder<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/DependencyInjection\/NilPortuguesMyBoundedContextExtension.php.html#20\">NilPortuguesMyBoundedContextExtension::load<\/a>"],[0,1,"<a href=\"NilPortugues\/MyBoundedContextBundle\/Tests\/Controller\/DefaultControllerTest.php.html#9\">DefaultControllerTest::testIndex<\/a>"],[100,1,"<a href=\"NilPortugues\/SymfonyCommandHandlerResolver.php.html#22\">SymfonyCommandHandlerResolver::__construct<\/a>"],[100,1,"<a href=\"NilPortugues\/SymfonyCommandHandlerResolver.php.html#32\">SymfonyCommandHandlerResolver::get<\/a>"],[50,2,"<a href=\"NilPortugues\/SymfonyCommandHandlerResolver.php.html#46\">SymfonyCommandHandlerResolver::commandMappedToCommandHandlerGuard<\/a>"],[100,1,"<a href=\"NilPortugues\/SymfonyCommandHandlerResolver.php.html#59\">SymfonyCommandHandlerResolver::resolveCommandName<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

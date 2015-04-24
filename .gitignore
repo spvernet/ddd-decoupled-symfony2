@@ -1,3 +1,5 @@
+/.idea/workspace.xml
+/build/
 /app/bootstrap.php.cache
 /app/cache
 /app/cache/dev
@@ -10,6 +12,6 @@
 /composer.phar
 /vendor/
 /web/bundles/
-.idea
-.idea/*
+/.idea
+/.idea/*
 .php_cs.cache
