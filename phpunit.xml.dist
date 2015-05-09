@@ -13,7 +13,6 @@
          stopOnSkipped="false"
          syntaxCheck="true"
          bootstrap="vendor/autoload.php"
-         strict="true"
          verbose="true">
 
     <php>
@@ -23,6 +22,9 @@
         <ini name="max_execution_time" value="-1"/>
         <ini name="date.timezone" value="Europe/Madrid" />
         <ini name="error_reporting" value="E_ALL" />
+
+        <!-- For symfony 2 integration tests -->
+        <server name="KERNEL_DIR" value="app/" />
     </php>
 
 
@@ -40,6 +42,7 @@
                 <directory>./app/</directory>
                 <directory>./tests/</directory>
                 <directory>./vendor/</directory>
+                <directory>./src/NilPortugues/MyBoundedContextBundle/DependencyInjection/</directory>
             </exclude>
         </whitelist>
     </filter>

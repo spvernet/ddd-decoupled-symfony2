@@ -25,7 +25,7 @@ class appDevDebugProjectContainer extends Container
     public function __construct()
     {
         $dir = __DIR__;
-        for ($i = 1; $i <= 5; ++$i) {
+        for ($i = 1; $i <= 4; ++$i) {
             $this->targetDirs[$i] = $dir = dirname($dir);
         }
         $this->parameters = $this->getDefaultParameters();
@@ -758,7 +758,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_667c820bd809dc8074b33b86252143605f80ce10dfe55a5bda65de3094624e24');
+        $instance->setNamespace('sf2orm_default_dffc4ea5ac500c3c35cec24e8bbffbbf9a8b0951f5de38eddea6ebf4bda71a07');
 
         return $instance;
     }
@@ -775,7 +775,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_667c820bd809dc8074b33b86252143605f80ce10dfe55a5bda65de3094624e24');
+        $instance->setNamespace('sf2orm_default_dffc4ea5ac500c3c35cec24e8bbffbbf9a8b0951f5de38eddea6ebf4bda71a07');
 
         return $instance;
     }
@@ -792,7 +792,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_667c820bd809dc8074b33b86252143605f80ce10dfe55a5bda65de3094624e24');
+        $instance->setNamespace('sf2orm_default_dffc4ea5ac500c3c35cec24e8bbffbbf9a8b0951f5de38eddea6ebf4bda71a07');
 
         return $instance;
     }
@@ -4326,7 +4326,7 @@ class appDevDebugProjectContainer extends Container
 
             ),
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/local/bin/node',
+            'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
