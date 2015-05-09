@@ -42,7 +42,7 @@ class UserControllerTest extends WebTestCase
     }
 
     /**
-     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUser
+     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUserAction
      */
     public function testViewUserReturnsFound()
     {
@@ -51,7 +51,7 @@ class UserControllerTest extends WebTestCase
     }
 
     /**
-     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUser
+     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUserAction
      */
     public function testViewUserReturnsNotFoundWhenBlogIdIsInvalid()
     {
@@ -60,7 +60,7 @@ class UserControllerTest extends WebTestCase
     }
 
     /**
-     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUser
+     * \NilPortugues\MyBoundedContextBundle\Controller\UserController::ViewUserAction
      */
     public function testViewUserReturnsNotFoundWhenBlogIdNotFoundInRepository()
     {
