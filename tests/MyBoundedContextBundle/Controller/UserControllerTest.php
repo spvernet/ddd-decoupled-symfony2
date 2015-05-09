@@ -12,6 +12,10 @@ namespace NilPortugues\Test\MyBoundedContextBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
+/**
+ * Class UserControllerTest
+ * @package NilPortugues\Test\MyBoundedContextBundle\Controller
+ */
 class UserControllerTest extends WebTestCase
 {
     /**
