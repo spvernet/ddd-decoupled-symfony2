@@ -10,6 +10,7 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
+use NilPortugues\CommandBus\Abstraction\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\EmailValidator;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
 
@@ -17,7 +18,7 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserNameValidator;
  * Class SignUpUserCommand
  * @package NilPortugues\MyBoundedContext\Application\Model\User\SignUp
  */
-class SignUpUserCommandValidator
+class SignUpUserCommandValidator implements CommandHandler
 {
     /**
      * @var array
@@ -33,6 +34,11 @@ class SignUpUserCommandValidator
     private $email;
 
     /**
+     * @var bool
+     */
+    private $result;
+
+    /**
      *
      */
     public function __construct()
@@ -46,7 +52,7 @@ class SignUpUserCommandValidator
      *
      * @return bool
      */
-    public function handle(SignUpUserCommand $command)
+    public function handle($command)
     {
         $isValid = [];
         $isValid[] = $this->username->isValid($command->getUsername());
@@ -55,7 +61,7 @@ class SignUpUserCommandValidator
         $result = array_search(false, $isValid, true);
         $this->buildErrorArray($result);
 
-        return $result;
+        $this->result = $result;
     }
 
     /**
@@ -79,5 +85,13 @@ class SignUpUserCommandValidator
     public function getErrors()
     {
         return $this->errors;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getResult()
+    {
+        return $this->result;
     }
 }

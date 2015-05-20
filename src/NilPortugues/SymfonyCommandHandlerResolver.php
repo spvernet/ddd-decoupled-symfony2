@@ -27,13 +27,15 @@ class SymfonyCommandHandlerResolver implements CommandHandlerResolver
 
     /**
      * @param array $handlers
-     * @param $commandClass
-     * @return mixed
+     * @param       $commandClass
+     * @param       $parentClass
+     *
+     * @return mixed|object
      */
-    public function get(array &$handlers, $commandClass)
+    public function get(array &$handlers, $commandClass, $parentClass)
     {
         $commandClassKey = $this->resolveCommandName($commandClass);
-        $this->commandMappedToCommandHandlerGuard($handlers, $commandClass, $commandClassKey);
+        $this->commandMappedToCommandHandlerGuard($handlers, $commandClass, $commandClassKey, $parentClass);
 
         return $this->service->get($handlers[$commandClassKey], true);
     }
@@ -41,14 +43,17 @@ class SymfonyCommandHandlerResolver implements CommandHandlerResolver
 
     /**
      * @param array $handlers
-     * @param $commandClass
-     * @param $commandClassKey
+     * @param       $commandClass
+     * @param       $commandClassKey
+     * @param       $parent
+     *
+     * @throws \RuntimeException
      */
-    protected function commandMappedToCommandHandlerGuard(array &$handlers, $commandClass, $commandClassKey)
+    protected function commandMappedToCommandHandlerGuard(array &$handlers, $commandClass, $commandClassKey, $parent)
     {
         if (false === array_key_exists($commandClassKey, $handlers)) {
             throw new RuntimeException(
-                sprintf('%s has no Command Handler assigned in %s.', $commandClass, get_class($this))
+                sprintf('%s has no Command Handler assigned in %s.', $commandClass, $parent)
             );
         }
     }

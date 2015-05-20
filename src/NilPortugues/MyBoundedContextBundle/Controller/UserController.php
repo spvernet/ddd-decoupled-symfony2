@@ -36,11 +36,8 @@ class UserController extends Controller
         $commandBus = $this->get(self::VALIDATION_BUS);
 
         try {
-            $response = $commandBus->handle(
-                new SignUpUserCommand($request->get('email'), $request->get('username'))
-            );
-
-            return $this->render(self::TWIG_VIEW_USER, ['user' => $response]);
+            $commandBus->handle(new SignUpUserCommand($request->get('email'), $request->get('username')));
+            return $this->render(self::TWIG_VIEW_USER, ['user' => $commandBus->getResult()]);
         } catch (\Exception $e) {
             print_r($commandBus->getErrors());
             die();
@@ -57,9 +54,10 @@ class UserController extends Controller
         $commandBus = $this->get(self::VALIDATION_BUS);
 
         try {
-            $response = $commandBus->handle(new ViewUserCommand($request->get('id')));
-            return $this->render(self::TWIG_VIEW_USER, ['user' => $response]);
+            $commandBus->handle(new ViewUserCommand($request->get('id')));
+            return $this->render(self::TWIG_VIEW_USER, ['user' => $commandBus->getResult()]);
         } catch (\Exception $e) {
+
             return $this
                 ->render(self::TWIG_VIEW_USER, ['error_msg' => $commandBus->getErrors()])
                 ->setStatusCode(404);

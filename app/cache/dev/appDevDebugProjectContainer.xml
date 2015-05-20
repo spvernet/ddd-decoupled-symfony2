@@ -1656,7 +1656,7 @@
       <tag name="monolog.logger" channel="php"/>
       <argument></argument>
       <argument type="service" id="monolog.logger.php" on-invalid="null"/>
-      <argument></argument>
+      <argument>null</argument>
       <argument>null</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2655,6 +2655,7 @@
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
       <argument>null</argument>
       <argument>UTF-8</argument>
+      <argument type="service" id="request_stack"/>
     </service>
     <service id="debug.dump_listener" class="Symfony\Component\HttpKernel\EventListener\DumpListener">
       <tag name="kernel.event_subscriber"/>

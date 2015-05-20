@@ -10,6 +10,13 @@
             "": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/nilopc/ddd-message-bus",
+            "vendor-alias": "nilportugues/message-bus"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.6.*",
@@ -24,7 +31,8 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "nilportugues/validator": "~1.0",
-        "nilportugues/uuid": "~1.0"
+        "nilportugues/uuid": "~1.0",
+        "nilportugues/message-bus" : "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

@@ -10,13 +10,14 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
+use NilPortugues\CommandBus\Abstraction\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserIdValidator;
 
 /**
  * Class ViewUserCommand
  * @package NilPortugues\MyBoundedContext\Application\Model\User\View
  */
-class ViewUserCommandValidator
+class ViewUserCommandValidator implements CommandHandler
 {
     /**
      * @var array
@@ -27,6 +28,11 @@ class ViewUserCommandValidator
      * @var
      */
     private $validator;
+
+    /**
+     * @var bool
+     */
+    private $result;
 
     /**
      *
@@ -41,7 +47,7 @@ class ViewUserCommandValidator
      *
      * @return bool
      */
-    public function handle(ViewUserCommand $command)
+    public function handle($command)
     {
         $result = $this->validator->isValid($command->getUserId());
 
@@ -49,7 +55,15 @@ class ViewUserCommandValidator
             $this->errors = $this->validator->getErrors();
         }
 
-        return $result;
+        $this->result = $result;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getResult()
+    {
+        return $this->result;
     }
 
     /**

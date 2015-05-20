@@ -12,6 +12,7 @@ namespace NilPortugues\MyBoundedContext\Application\Model\User\SignUp;
 
 use DateTime;
 use InvalidArgumentException;
+use NilPortugues\CommandBus\Abstraction\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
 use NilPortugues\MyBoundedContext\Infrastructure\Factory\User\UserFactory;
 
@@ -19,12 +20,22 @@ use NilPortugues\MyBoundedContext\Infrastructure\Factory\User\UserFactory;
  * Class SignUpUserCommandHandler
  * @package NilPortugues\MyBoundedContext\Application\Model\User\SignUp
  */
-class SignUpUserCommandHandler
+class SignUpUserCommandHandler implements CommandHandler
 {
     /**
      * @var UserRepositoryInterface
      */
     private $userRepository;
+
+    /**
+     * @var SignUpUserResponse
+     */
+    private $result;
+
+    /**
+     * @var array
+     */
+    private $errors = [];
 
     /**
      * @param UserRepositoryInterface $userRepository
@@ -40,7 +51,7 @@ class SignUpUserCommandHandler
      * @return SignUpUserResponse
      * @throws \InvalidArgumentException
      */
-    public function handle(SignUpUserCommand $request)
+    public function handle($request)
     {
         $user = UserFactory::create(
             null,
@@ -51,11 +62,27 @@ class SignUpUserCommandHandler
 
         $this->userRepository->save($user);
 
-        return new SignUpUserResponse(
+        $this->result = new SignUpUserResponse(
             $user->getUserId(),
             $user->getUsername(),
             $user->getEmail(),
             $user->getRegisteredOn()
         );
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
+
+    /**
+     * @return array
+     */
+    public function getErrors()
+    {
+        return $this->errors;
     }
 }

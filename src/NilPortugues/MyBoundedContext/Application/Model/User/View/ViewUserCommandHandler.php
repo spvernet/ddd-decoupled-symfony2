@@ -11,6 +11,7 @@
 namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
 use InvalidArgumentException;
+use NilPortugues\CommandBus\Abstraction\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
@@ -19,9 +20,22 @@ use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
  * Class ViewUserCommandHandler
  * @package NilPortugues\MyBoundedContext\Application\Model\User\View
  */
-class ViewUserCommandHandler
+class ViewUserCommandHandler implements CommandHandler
 {
+    /**
+     * @var UserRepositoryInterface
+     */
     private $userRepository;
+
+    /**
+     * @var ViewUserResponse
+     */
+    private $result;
+
+    /**
+     * @var array
+     */
+    private $errors = [];
 
     /**
      * @param UserRepositoryInterface $userRepository
@@ -37,19 +51,36 @@ class ViewUserCommandHandler
      * @return ViewUserResponse
      * @throws \InvalidArgumentException
      */
-    public function handle(ViewUserCommand $request)
+    public function handle($request)
     {
         try {
             $user = $this->userRepository->find(new UserId($request->getUserId()));
 
-            return new ViewUserResponse(
+            $this->result = new ViewUserResponse(
                 $user->getUserId()->get(),
                 $user->getUsername()->get(),
                 $user->getEmail()->get(),
                 $user->getRegisteredOn()->format('Y-m-d H:i:s')
             );
         } catch (UserNotFoundException $e) {
+            $this->errors = $e->getMessage();
             throw new InvalidArgumentException($e->getMessage());
         }
+    }
+
+    /**
+     * @return ViewUserResponse
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
+
+    /**
+     * @return array
+     */
+    public function getErrors()
+    {
+        return $this->errors;
     }
 }
