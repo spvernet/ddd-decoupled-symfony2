@@ -54,7 +54,7 @@ class SymfonyCommandHandlerResolverTest extends \PHPUnit_Framework_TestCase
      */
     public function testItShouldResolveCommandToCommandHandler()
     {
-        $commandHandler = $this->resolver->get($this->handlers, 'dummyCommand');
+        $commandHandler = $this->resolver->get($this->handlers, 'dummyCommand', get_class($this));
         $this->assertInstanceOf('stdClass', $commandHandler);
     }
 
@@ -64,6 +64,6 @@ class SymfonyCommandHandlerResolverTest extends \PHPUnit_Framework_TestCase
     public function testItThrowsRuntimeExceptionWhenCommandHandlerNotMapped()
     {
         $this->setExpectedException('RuntimeException');
-        $this->resolver->get($this->handlers, 'undefinedCommand');
+        $this->resolver->get($this->handlers, 'undefinedCommand', get_class($this));
     }
 }
