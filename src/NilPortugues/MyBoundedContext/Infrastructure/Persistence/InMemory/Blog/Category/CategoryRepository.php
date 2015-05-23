@@ -10,10 +10,10 @@
 
 namespace NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\Blog\Category;
 
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Category;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\CategoryId;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Repository\CategoryNotFoundException;
-use NilPortugues\MyBoundedContext\Entity\Model\Blog\Category\Repository\CategoryRepositoryInterface;
+use NilPortugues\MyBoundedContext\Entity\Blog\Category\Category;
+use NilPortugues\MyBoundedContext\Entity\Blog\Category\CategoryId;
+use NilPortugues\MyBoundedContext\Entity\Blog\Category\Repository\CategoryNotFoundException;
+use NilPortugues\MyBoundedContext\Entity\Blog\Category\Repository\CategoryRepositoryInterface;
 use NilPortugues\MyBoundedContext\Infrastructure\Factory\Blog\Category\CategoryFactory;
 
 /**

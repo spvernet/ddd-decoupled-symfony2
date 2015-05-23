@@ -2,28 +2,28 @@ services:
 ################################################################################################################
 # USER
 ################################################################################################################
-    nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_handler:
-        class: NilPortugues\MyBoundedContext\Application\Model\User\View\ViewUserCommandHandler
+    nil_portugues.my_bounded_context.application.user.view_user.command.view_user_command_handler:
+        class: NilPortugues\MyBoundedContext\Application\User\View\Command\ViewUserCommandHandler
         arguments:
          - @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository
 
-    nil_portugues.my_bounded_context.application.model.user.view_user.view_user_command_validator:
-        class: NilPortugues\MyBoundedContext\Application\Model\User\View\ViewUserCommandValidator
+    nil_portugues.my_bounded_context.application.user.view_user.command.view_user_command_validator:
+        class: NilPortugues\MyBoundedContext\Application\User\View\Command\ViewUserCommandValidator
 
-    nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_handler:
-        class: NilPortugues\MyBoundedContext\Application\Model\User\SignUp\SignUpUserCommandHandler
+    nil_portugues.my_bounded_context.application.user.sign_up.command.sign_up_user_command_handler:
+        class: NilPortugues\MyBoundedContext\Application\User\SignUp\Command\SignUpUserCommandHandler
         arguments:
          - @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.user.user_repository
 
-    nil_portugues.my_bounded_context.application.model.user.sign_up.sign_up_user_command_validator:
-        class: NilPortugues\MyBoundedContext\Application\Model\User\SignUp\SignUpUserCommandValidator
+    nil_portugues.my_bounded_context.application.user.sign_up.command.sign_up_user_command_validator:
+        class: NilPortugues\MyBoundedContext\Application\User\SignUp\Command\SignUpUserCommandValidator
 ################################################################################################################
 # POST
 ################################################################################################################
-    nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_handler:
-        class: NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommandHandler
+    nil_portugues.my_bounded_context.application.blog_post.view_post.command.view_post_command_handler:
+        class: NilPortugues\MyBoundedContext\Application\Blog\Post\ViewPost\Command\ViewPostCommandHandler
         arguments:
          - @nil_portugues.my_bounded_context.infrastructure.persistence.in_memory.blog.post.post_repository
 
-    nil_portugues.my_bounded_context.application.model.blog_post.view_post.view_post_command_validator:
-        class: NilPortugues\MyBoundedContext\Application\Model\Blog\Post\ViewPost\ViewPostCommandValidator
+    nil_portugues.my_bounded_context.application.blog_post.view_post.command.view_post_command_validator:
+        class: NilPortugues\MyBoundedContext\Application\Blog\Post\ViewPost\Command\ViewPostCommandValidator

@@ -2,7 +2,7 @@
 
 namespace NilPortugues;
 
-use NilPortugues\CommandBus\Abstraction\CommandHandlerResolver;
+use NilPortugues\CommandBus\CommandHandlerResolver;
 use RuntimeException;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

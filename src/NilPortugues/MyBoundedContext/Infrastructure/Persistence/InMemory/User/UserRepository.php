@@ -10,10 +10,10 @@
 
 namespace NilPortugues\MyBoundedContext\Infrastructure\Persistence\InMemory\User;
 
-use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
-use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
-use NilPortugues\MyBoundedContext\Entity\Model\User\User;
-use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
+use NilPortugues\MyBoundedContext\Entity\User\Repository\UserNotFoundException;
+use NilPortugues\MyBoundedContext\Entity\User\Repository\UserRepositoryInterface;
+use NilPortugues\MyBoundedContext\Entity\User\User;
+use NilPortugues\MyBoundedContext\Entity\User\UserId;
 use NilPortugues\MyBoundedContext\Infrastructure\Factory\User\UserFactory;
 
 /**

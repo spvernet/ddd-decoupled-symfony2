@@ -10,11 +10,11 @@
 namespace NilPortugues\MyBoundedContext\Infrastructure\Factory\User;
 
 use DateTime;
-use NilPortugues\MyBoundedContext\Entity\Model\User\Email;
-use NilPortugues\MyBoundedContext\Entity\Model\User\Factory\UserFactoryInterface;
-use NilPortugues\MyBoundedContext\Entity\Model\User\User;
-use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;
-use NilPortugues\MyBoundedContext\Entity\Model\User\UserName;
+use NilPortugues\MyBoundedContext\Entity\User\Email;
+use NilPortugues\MyBoundedContext\Entity\User\Factory\UserFactoryInterface;
+use NilPortugues\MyBoundedContext\Entity\User\User;
+use NilPortugues\MyBoundedContext\Entity\User\UserId;
+use NilPortugues\MyBoundedContext\Entity\User\UserName;
 
 /**
  * Class UserFactoryInterface

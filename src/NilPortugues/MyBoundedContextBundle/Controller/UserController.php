@@ -2,8 +2,8 @@
 
 namespace NilPortugues\MyBoundedContextBundle\Controller;
 
-use NilPortugues\MyBoundedContext\Application\Model\User\SignUp\SignUpUserCommand;
-use NilPortugues\MyBoundedContext\Application\Model\User\View\ViewUserCommand;
+use NilPortugues\MyBoundedContext\Application\User\SignUp\Command\SignUpUserCommand;
+use NilPortugues\MyBoundedContext\Application\User\View\Command\ViewUserCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -36,17 +36,27 @@ class UserController extends Controller
         $commandBus = $this->get(self::VALIDATION_BUS);
 
         try {
-            $commandBus->handle(new SignUpUserCommand($request->get('email'), $request->get('username')));
-            return $this->render(self::TWIG_VIEW_USER, ['user' => $commandBus->getResult()]);
+            $commandBus->handle(
+                new SignUpUserCommand(
+                    $request->get('email'),
+                    $request->get('username')
+                )
+            );
+
+            $code = 200;
+            $render = ['user' => $commandBus->getResult()];
         } catch (\Exception $e) {
-            print_r($commandBus->getErrors());
+
+            $code = 400;
+            print_r('Do redirect! '.$e->getMessage());
             die();
         }
+
+        return $this->render(self::TWIG_VIEW_USER, $render)->setStatusCode($code);
     }
 
     /**
      * @param Request $request
-     *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function viewUserAction(Request $request)
@@ -55,12 +65,15 @@ class UserController extends Controller
 
         try {
             $commandBus->handle(new ViewUserCommand($request->get('id')));
-            return $this->render(self::TWIG_VIEW_USER, ['user' => $commandBus->getResult()]);
-        } catch (\Exception $e) {
 
-            return $this
-                ->render(self::TWIG_VIEW_USER, ['error_msg' => $commandBus->getErrors()])
-                ->setStatusCode(404);
+            $code = 200;
+            $render = ['user' => $commandBus->getResult()];
+
+        } catch (\Exception $e) {
+            $code = 404;
+            $render = ['error_msg' => $commandBus->getErrors()];
         }
+
+        return $this->render(self::TWIG_VIEW_USER, $render)->setStatusCode($code);
     }
 }

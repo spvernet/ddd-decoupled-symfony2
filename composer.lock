@@ -956,7 +956,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nilopc/ddd-message-bus",
-                "reference": "6198d7db546c437620e65ebfaf2380d796e101dd"
+                "reference": "2461b36ee87d3074ba62a65133f2bf837d633ad5"
             },
             "require": {
                 "php": ">=5.4"
@@ -969,18 +969,18 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "NilPortugues\\CommandBus\\": "src/"
+                    "NilPortugues\\": "src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NilPortugues\\Tests\\CommandBus\\": "tests/"
+                    "NilPortugues\\Tests\\": "tests/"
                 }
             },
             "license": [
                 "MIT"
             ],
-            "time": "2015-05-20 18:56:35"
+            "time": "2015-05-23 11:02:36"
         },
         {
             "name": "nilportugues/uuid",
@@ -1244,16 +1244,16 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "cecb1397087dc9c733796eda6e9d121336039cdc"
+                "reference": "cde03c48d490d805ef1349e5108f8b3085981ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/cecb1397087dc9c733796eda6e9d121336039cdc",
-                "reference": "cecb1397087dc9c733796eda6e9d121336039cdc",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/cde03c48d490d805ef1349e5108f8b3085981ead",
+                "reference": "cde03c48d490d805ef1349e5108f8b3085981ead",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2015-04-21 07:52:05"
+            "time": "2015-05-22 14:21:04"
         },
         {
             "name": "swiftmailer/swiftmailer",
