@@ -11,7 +11,7 @@
 namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
 use InvalidArgumentException;
-use NilPortugues\CommandBus\Abstraction\CommandHandler;
+use NilPortugues\CommandBus\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserNotFoundException;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Repository\UserRepositoryInterface;
 use NilPortugues\MyBoundedContext\Entity\Model\User\UserId;

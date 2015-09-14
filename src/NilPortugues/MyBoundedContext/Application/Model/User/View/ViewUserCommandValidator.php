@@ -10,7 +10,7 @@
 
 namespace NilPortugues\MyBoundedContext\Application\Model\User\View;
 
-use NilPortugues\CommandBus\Abstraction\CommandHandler;
+use NilPortugues\CommandBus\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\Model\User\Validator\UserIdValidator;
 
 /**
