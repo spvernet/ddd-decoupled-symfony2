@@ -3,10 +3,10 @@
     "license": "proprietary",
     "type": "project",
     "autoload": {
-        "psr-0":
+        "psr-4":
         {
-            "SymfonyStandard": "app/",
-            "NilPortugues": "src/NilPortugues/",
+            "SymfonyStandard\\": "app/",
+            "NilPortugues\\": "src/NilPortugues/",
             "": "src/"
         }
     },
