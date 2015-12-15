@@ -48,7 +48,8 @@ class UserController extends Controller
         } catch (\Exception $e) {
 
             $code = 400;
-            print_r('Do redirect! '.$e->getMessage());
+            print_r('Validation error, do redirect!<br><br><pre>');
+            print_r($commandBus->getErrors());
             die();
         }
 

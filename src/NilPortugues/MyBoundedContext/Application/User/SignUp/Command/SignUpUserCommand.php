@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\User\SignUp;
+namespace NilPortugues\MyBoundedContext\Application\User\SignUp\Command;
 
 /**
  * Class SignUpUserCommand

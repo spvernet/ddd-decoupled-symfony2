@@ -33,15 +33,12 @@ class BlogPostController extends Controller
         $commandBus = $this->get(self::VALIDATION_BUS);
 
         try {
-            $commandBus->handle(new ViewPostCommand($request->get('id')));
-
-            $code = 200;
-            $render = ['post' => $commandBus->getResult()];
+            $response = $commandBus->handle(new ViewPostCommand($request->get('id')));
+            return $this->render(self::TWIG_VIEW_POST, ['post' => $response]);
         } catch (\Exception $e) {
-            $code = 404;
-            $render = ['error_msg' => $commandBus->getErrors()];
-
+            return $this
+                ->render(self::TWIG_VIEW_POST, ['error_msg' => $commandBus->getErrors()])
+                ->setStatusCode(404);
         }
-        return $this->render(self::TWIG_VIEW_POST, $render)->setStatusCode($code);
     }
 }

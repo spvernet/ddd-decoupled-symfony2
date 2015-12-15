@@ -16,5 +16,5 @@ nil_portugues_my_bounded_context_view_user:
     defaults: { _controller: NilPortuguesMyBoundedContextBundle:User:viewUser }
 
 nil_portugues_my_bounded_context_view_post:
-    path:     /blog/post/{id}
+    path:     /blog/post/{postId}
     defaults: { _controller: NilPortuguesMyBoundedContextBundle:BlogPost:viewPost }

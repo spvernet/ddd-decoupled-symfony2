@@ -33,7 +33,7 @@ class UserIdValidator
      */
     public function __construct()
     {
-        $this->validator = new Validator();
+        $this->validator = Validator::create();
     }
 
     /**

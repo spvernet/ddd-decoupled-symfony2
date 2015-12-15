@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\MyBoundedContext\Application\User\SignUp;
+namespace NilPortugues\MyBoundedContext\Application\User\SignUp\Command;
 
 use NilPortugues\MyBoundedContext\Application\CommandHandler;
 use NilPortugues\MyBoundedContext\Entity\User\Validator\EmailValidator;
@@ -47,6 +47,7 @@ class SignUpUserCommandValidator extends CommandHandler
         $isValid[] = $this->username->isValid($command->getUsername());
         $isValid[] = $this->email->isValid($command->getEmail());
 
+
         $result = array_search(false, $isValid, true);
         $this->buildErrorArray($result);
 
@@ -58,7 +59,7 @@ class SignUpUserCommandValidator extends CommandHandler
      */
     private function buildErrorArray($result)
     {
-        if (false === $result) {
+        if (false !== $result) {
             $this->errors = array_merge(
                 $this->username->getErrors(),
                 $this->email->getErrors()
